@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jiko Koa | Quality Modern Charcoal Stoves in Kenya</title>
+
+<meta name="description" content="Jiko Koa - Quality modern charcoal stoves in Kenya. Save charcoal, cook faster and enjoy durable, efficient cooking with Jikokoa.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f4ef;
+    color:#29231e;
+    line-height:1.6;
+}
+
+header{
+    background:#211b17;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.25);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:16px 22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#e89024;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:24px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f3a43b;
+}
+
+.hero{
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(90deg,rgba(22,17,14,.95),rgba(22,17,14,.72),rgba(22,17,14,.25)),
+        url("images/jikokoa-hero.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:80px 22px;
+    color:white;
+}
+
+.badge{
+    display:inline-block;
+    background:#e89024;
+    padding:8px 16px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1;
+    max-width:750px;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#f3a43b;
+}
+
+.hero p{
+    max-width:650px;
+    font-size:20px;
+    color:#eee;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 26px;
+    border-radius:7px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:#e89024;
+    color:white;
+}
+
+.btn-primary:hover{
+    background:#c96e0c;
+}
+
+.btn-light{
+    background:white;
+    color:#29231e;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+section{
+    padding:80px 22px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#716960;
+    max-width:650px;
+    margin:auto;
+}
+
+.intro{
+    background:white;
+}
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.intro-image{
+    min-height:400px;
+    border-radius:18px;
+    background:url("images/jikokoa.jpg") center/cover no-repeat;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.intro h2{
+    font-size:40px;
+    margin-bottom:18px;
+}
+
+.intro p{
+    margin-bottom:18px;
+    color:#5e5750;
+}
+
+.highlight{
+    border-left:5px solid #e89024;
+    padding:15px 20px;
+    background:#fff6e9;
+    margin-top:25px;
+    font-weight:bold;
+}
+
+.benefits{
+    background:#eee8df;
+}
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:30px 22px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 7px 25px rgba(0,0,0,.07);
+}
+
+.icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:#fff0d9;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#6c655e;
+    font-size:15px;
+}
+
+.products{
+    background:#fff;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.product{
+    background:#f8f5f0;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.25s;
+}
+
+.product:hover{
+    transform:translateY(-6px);
+}
+
+.product-img{
+    height:280px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.classic{
+    background-image:url("images/jikokoa-classic.jpg");
+}
+
+.xtra{
+    background-image:url("images/jikokoa-xtra.jpg");
+}
+
+.commercial{
+    background-image:url("images/jikokoa-commercial.jpg");
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    font-size:25px;
+    margin-bottom:8px;
+}
+
+.product-info p{
+    color:#666;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:24px;
+    color:#d8750c;
+    font-weight:900;
+    margin-bottom:18px;
+}
+
+.feature-section{
+    background:#211b17;
+    color:white;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.feature-section h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.feature-section p{
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+.feature-list{
+    list-style:none;
+}
+
+.feature-list li{
+    margin:14px 0;
+    font-size:18px;
+}
+
+.feature-list li::before{
+    content:"✓";
+    color:#f3a43b;
+    font-weight:bold;
+    margin-right:12px;
+}
+
+.info-box{
+    background:#302720;
+    border:1px solid #4c3d31;
+    border-radius:20px;
+    padding:35px;
+}
+
+.info-box h3{
+    color:#f3a43b;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    padding:15px 0;
+    border-bottom:1px solid #4a3d34;
+}
+
+.info-row:last-child{
+    border-bottom:0;
+}
+
+.cta{
+    background:
+        linear-gradient(rgba(180,95,10,.88),rgba(180,95,10,.88)),
+        url("images/jikokoa-hero.jpg") center/cover;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:0 auto 28px;
+    font-size:18px;
+}
+
+.contact{
+    background:white;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-card{
+    background:#f6f2ec;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-card h3{
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.contact-item{
+    margin:15px 0;
+}
+
+.contact-item strong{
+    display:block;
+    color:#d8750c;
+}
+
+footer{
+    background:#171310;
+    color:#bbb;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer strong{
+    color:#f3a43b;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+    z-index:2000;
+}
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-grid{
+        grid-template-columns:1fr;
+        max-width:550px;
+        margin:auto;
+    }
+
+    .intro-grid,
+    .feature-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+}
+
+@media(max-width:550px){
+
+    section{
+        padding:60px 18px;
+    }
+
+    .benefit-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .intro h2,
+    .feature-section h2,
+    .cta h2{
+        font-size:32px;
+    }
+
+    .btn{
+        display:block;
+        text-align:center;
+        margin:10px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">JIKO<span>KOA</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#products">Models</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+
+        <span class="badge">QUALITY MODERN CHARCOAL STOVE</span>
+
+        <h1>
+            Cook Better.<br>
+            Save <span>Charcoal.</span>
+        </h1>
+
+        <p>
+            Discover Jiko Koa — a high-efficiency modern charcoal cooking
+            solution designed to help Kenyan households cook faster while
+            using significantly less charcoal.
+        </p>
+
+        <a href="#products" class="btn btn-primary">
+            VIEW OUR MODELS
+        </a>
+
+        <a href="#contact" class="btn btn-light">
+            ORDER NOW
+        </a>
+
+    </div>
+</section>
+
+<section class="intro" id="about">
+    <div class="container intro-grid">
+
+        <div class="intro-image"></div>
+
+        <div>
+            <h2>Modern Cooking Made Better</h2>
+
+            <p>
+                Jiko Koa is designed for households looking for a cleaner,
+                more efficient and dependable charcoal cooking experience.
+            </p>
+
+            <p>
+                Its efficient combustion system helps make better use of
+                charcoal while the insulated cooking chamber helps the stove
+                heat quickly and retain useful cooking heat.
+            </p>
+
+            <p>
+                Whether you're preparing everyday family meals or cooking
+                for a larger household, there's a Jiko Koa model designed
+                for the job.
+            </p>
+
+            <div class="highlight">
+                Use less charcoal. Cook efficiently. Enjoy a durable modern jiko.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Why Choose Jiko Koa?</h2>
+            <p>
+                Built around efficiency, convenience and durability.
+            </p>
+        </div>
+
+        <div class="benefit-grid">
+
+            <div class="card">
+                <div class="icon">🔥</div>
+                <h3>Fuel Savings</h3>
+                <p>
+                    Designed to use charcoal efficiently and help reduce
+                    everyday cooking fuel consumption.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Fast Cooking</h3>
+                <p>
+                    Efficient heat generation helps the stove heat up quickly
+                    for everyday cooking.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🛡️</div>
+                <h3>Durable</h3>
+                <p>
+                    Strong construction designed to provide years of reliable
+                    household cooking.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧹</div>
+                <h3>Easy Cleaning</h3>
+                <p>
+                    Convenient ash management makes cleaning and maintaining
+                    your stove easier.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="products" id="products">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Choose Your Jiko Koa</h2>
+            <p>
+                Select the model that fits your household or business.
+            </p>
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product">
+
+                <div class="product-img classic"></div>
+
+                <div class="product-info">
+                    <h3>Jikokoa Classic</h3>
+
+                    <p>
+                        A practical modern charcoal stove suitable for
+                        everyday household cooking.
+                    </p>
+
+                    <div class="price">
+                        From KSh 3,300
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        ENQUIRE
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="product-img xtra"></div>
+
+                <div class="product-info">
+                    <h3>Jikokoa Xtra</h3>
+
+                    <p>
+                        A larger option designed for families that need
+                        additional cooking capacity.
+                    </p>
+
+                    <div class="price">
+                        From KSh 4,500
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        ENQUIRE
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="product">
+
+                <div class="product-img commercial"></div>
+
+                <div class="product-info">
+                    <h3>Commercial Jikokoa</h3>
+
+                    <p>
+                        A larger-capacity cooking solution for restaurants,
+                        food businesses and other commercial applications.
+                    </p>
+
+                    <div class="price">
+                        Enquire for Price
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">
+                        ENQUIRE
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="feature-section">
+
+    <div class="container feature-grid">
+
+        <div>
+            <h2>Designed Around Your Cooking Needs</h2>
+
+            <p>
+                From preparing breakfast for the family to cooking large
+                meals, Jiko Koa combines traditional charcoal cooking with
+                modern stove design.
+            </p>
+
+            <ul class="feature-list">
+                <li>Efficient charcoal combustion</li>
+                <li>Quick heat-up</li>
+                <li>Insulated cooking chamber</li>
+                <li>Sturdy construction</li>
+                <li>Cool-touch handles</li>
+                <li>Detachable ashtray</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+
+            <h3>Jiko Koa At A Glance</h3>
+
+            <div class="info-row">
+                <span>Fuel</span>
+                <strong>Charcoal</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Use</span>
+                <strong>Home & Commercial</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Design</span>
+                <strong>Modern & Efficient</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Cleaning</span>
+                <strong>Detachable Ashtray</strong>
+            </div>
+
+            <div class="info-row">
+                <span>Models</span>
+                <strong>Classic • Xtra • Commercial</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Ready to Upgrade Your Jiko?</h2>
+
+        <p>
+            Choose a modern charcoal stove designed to make everyday cooking
+            more efficient and convenient.
+        </p>
+
+        <a href="#contact" class="btn btn-light">
+            GET YOUR JIKO KOA
+        </a>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>
+                Interested in a Jiko Koa? Contact us for availability,
+                current prices and ordering information.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>Order / Enquiries</h3>
+
+                <div class="contact-item">
+                    <strong>Phone</strong>
+                    +254 XXX XXX XXX
+                </div>
+
+                <div class="contact-item">
+                    <strong>WhatsApp</strong>
+                    Message us directly using the WhatsApp button.
+                </div>
+
+                <div class="contact-item">
+                    <strong>Location</strong>
+                    Kenya
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <h3>Why Buy From Jiko Koa?</h3>
+
+                <p>
+                    We focus on modern charcoal cooking solutions designed
+                    around efficiency, durability and everyday convenience.
+                </p>
+
+                <br>
+
+                <p>
+                    Contact us today to find the right Jiko Koa model for
+                    your household or business.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<a class="whatsapp"
+   href="https://wa.me/254700000000"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    ☎
+</a>
+
+<footer>
+    <p>
+        © 2026 <strong>JIKO KOA</strong>. Quality Modern Charcoal Stoves.
+    </p>
+
+    <p>
+        Efficient cooking. Better living.
+    </p>
+</footer>
+
+</body>
+</html>
