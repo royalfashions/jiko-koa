@@ -9,7 +9,17 @@
 <meta name="description"
 content="Shop Jiko Koa modern charcoal stoves. Fuel efficient, durable and eco-friendly. Prices from KSh 3,500. Nairobi delivery available.">
 
+<!-- PREMIUM FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+
+/* =====================================================
+   JIKO KOA PREMIUM DESIGN
+   FUNCTIONALITY PRESERVED
+===================================================== */
 
 *{
     margin:0;
@@ -22,37 +32,73 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#fafbf5;
-    color:#123c27;
+    font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(circle at 10% 10%,rgba(56,118,70,.18),transparent 25%),
+        radial-gradient(circle at 90% 40%,rgba(177,155,73,.10),transparent 25%),
+        #071d14;
+    color:#f4f1df;
+    overflow-x:hidden;
 }
 
-/* ================= TOP BAR ================= */
+/* subtle background pattern */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:.035;
+    background-image:
+        linear-gradient(rgba(255,255,255,.8) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.8) 1px,transparent 1px);
+    background-size:45px 45px;
+    z-index:-1;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
 
 .topbar{
-    background:#064b2b;
-    color:white;
-    padding:11px 5%;
+    background:#04150e;
+    color:#dfe8d5;
+    padding:10px 5%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    font-size:14px;
+    font-size:12px;
+    border-bottom:1px solid rgba(190,180,104,.15);
 }
 
 .topbar span{
     margin:0 8px;
 }
 
-/* ================= NAVIGATION ================= */
+.topbar div:first-child{
+    color:#cbd9bd;
+}
+
+.topbar div:last-child{
+    color:#d6c875;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
 nav{
-    background:#fff;
+    background:rgba(7,29,20,.92);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
     height:84px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     padding:0 5%;
-    box-shadow:0 3px 15px rgba(0,0,0,.06);
+    border-bottom:1px solid rgba(255,255,255,.07);
     position:sticky;
     top:0;
     z-index:1000;
@@ -67,207 +113,298 @@ nav{
 .logo-icon{
     width:50px;
     height:50px;
-    border-radius:50%;
-    background:#e9f2dc;
+    border-radius:16px;
+    background:linear-gradient(135deg,#dcebc5,#a8c88e);
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
+    font-size:26px;
+    box-shadow:0 0 25px rgba(154,191,119,.18);
 }
 
 .logo h1{
-    font-size:25px;
-    color:#0b4729;
+    font-size:23px;
+    letter-spacing:1px;
+    color:#f5f0d8;
 }
 
 .logo p{
-    font-size:11px;
-    color:#66735f;
+    font-size:9px;
+    color:#aebba7;
+    letter-spacing:.5px;
 }
 
 .navlinks{
     display:flex;
-    gap:28px;
+    gap:25px;
     align-items:center;
 }
 
 .navlinks a{
     text-decoration:none;
-    color:#17231b;
-    font-weight:600;
+    color:#d7dfd4;
+    font-size:13px;
+    font-weight:500;
+    transition:.25s;
 }
 
 .navlinks a:hover{
-    color:#08763c;
+    color:#d6c875;
 }
 
 .cart-btn{
-    border:1px solid #b6bda9;
-    background:white;
-    border-radius:10px;
-    padding:13px 20px;
-    font-weight:bold;
+    border:1px solid rgba(215,200,117,.35);
+    background:rgba(255,255,255,.04);
+    border-radius:12px;
+    padding:12px 18px;
+    font-weight:600;
     cursor:pointer;
-    color:#12452b;
+    color:#f5f0d8;
     position:relative;
-    font-size:15px;
+    font-size:13px;
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    background:#d6c875;
+    color:#071d14;
+    transform:translateY(-2px);
 }
 
 .cart-count{
     position:absolute;
     right:-7px;
     top:-8px;
-    background:#063f24;
-    color:white;
+    background:#d6c875;
+    color:#071d14;
     width:22px;
     height:22px;
     border-radius:50%;
-    font-size:12px;
+    font-size:11px;
+    font-weight:800;
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-/* ================= HERO ================= */
+
+/* =====================================================
+   HERO
+===================================================== */
 
 .hero{
     max-width:1400px;
     margin:28px auto;
-    min-height:510px;
-    border-radius:25px;
+    min-height:560px;
+    border-radius:30px;
     overflow:hidden;
     position:relative;
 
     background:
-    linear-gradient(
-        90deg,
-        rgba(247,248,232,.98) 0%,
-        rgba(247,248,232,.92) 42%,
-        rgba(247,248,232,.15) 72%
-    ),
-    url("hero.jpg") center/cover no-repeat;
+        linear-gradient(
+            90deg,
+            rgba(241,239,216,.98) 0%,
+            rgba(241,239,216,.94) 38%,
+            rgba(241,239,216,.42) 66%,
+            rgba(241,239,216,.04) 100%
+        ),
+        url("hero.jpg") center/cover no-repeat;
 
     display:flex;
     align-items:center;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.35),
+        inset 0 0 0 1px rgba(255,255,255,.35);
+
+    animation:heroAppear 1s ease both;
+}
+
+@keyframes heroAppear{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    right:-100px;
+    top:-100px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.35);
+    animation:floatCircle 8s ease-in-out infinite;
+}
+
+@keyframes floatCircle{
+    0%,100%{
+        transform:translate(0,0);
+    }
+    50%{
+        transform:translate(-20px,20px);
+    }
 }
 
 .hero-content{
-    width:55%;
-    padding:55px 6%;
+    width:57%;
+    padding:60px 6%;
+    position:relative;
+    z-index:2;
 }
 
 .badge{
-    display:inline-block;
-    color:#286b32;
-    font-weight:bold;
-    letter-spacing:1px;
-    margin-bottom:15px;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    color:#316a3a;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:1.5px;
+    margin-bottom:17px;
 }
 
 .hero h2{
-    font-size:72px;
-    line-height:.95;
-    color:#064c2c;
+    font-size:76px;
+    line-height:.92;
+    color:#063c24;
+    letter-spacing:-3px;
     margin-bottom:12px;
 }
 
 .hero h3{
-    font-size:28px;
+    font-size:25px;
+    color:#193d29;
     margin-bottom:15px;
+    letter-spacing:.5px;
 }
 
 .hero p{
-    font-size:17px;
-    color:#333d36;
-    line-height:1.6;
+    font-size:15px;
+    color:#3e4d42;
+    line-height:1.8;
     max-width:530px;
 }
 
 .features-mini{
     display:flex;
-    gap:22px;
-    margin:28px 0;
+    gap:10px;
+    margin:25px 0;
     flex-wrap:wrap;
 }
 
 .feature-mini{
     display:flex;
     align-items:center;
-    gap:7px;
-    font-size:13px;
-    font-weight:bold;
+    gap:6px;
+    font-size:11px;
+    font-weight:600;
+    background:rgba(255,255,255,.55);
+    padding:8px 11px;
+    border-radius:30px;
+    color:#24452f;
+    border:1px solid rgba(31,81,44,.12);
+    backdrop-filter:blur(6px);
 }
 
 .hero-buttons{
     display:flex;
-    gap:15px;
+    gap:12px;
     flex-wrap:wrap;
 }
 
 .btn{
-    padding:16px 27px;
-    border-radius:9px;
+    padding:14px 23px;
+    border-radius:10px;
     border:none;
     cursor:pointer;
-    font-size:15px;
-    font-weight:bold;
+    font-family:inherit;
+    font-size:13px;
+    font-weight:700;
     text-decoration:none;
     display:inline-block;
+    transition:.3s;
 }
 
 .btn-green{
     background:#08763c;
     color:white;
+    box-shadow:0 10px 25px rgba(8,118,60,.25);
 }
 
 .btn-green:hover{
-    background:#045a2c;
+    background:#0a8b48;
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(8,118,60,.35);
 }
 
 .btn-outline{
-    background:white;
+    background:rgba(255,255,255,.72);
     color:#104a2b;
-    border:2px solid #104a2b;
+    border:1px solid rgba(16,74,43,.3);
+}
+
+.btn-outline:hover{
+    background:#fff;
+    transform:translateY(-3px);
 }
 
 .price-badge{
     position:absolute;
     right:4%;
     bottom:35px;
-    background:rgba(20,25,19,.82);
+    background:rgba(4,20,13,.86);
+    backdrop-filter:blur(12px);
     color:white;
-    padding:15px 30px;
-    border-radius:16px;
+    padding:17px 28px;
+    border-radius:17px;
     text-align:center;
+    border:1px solid rgba(214,200,117,.35);
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    z-index:3;
 }
 
 .price-badge small{
     display:block;
-    font-size:14px;
+    font-size:11px;
+    color:#bbc7b7;
 }
 
 .price-badge strong{
-    font-size:26px;
+    font-size:25px;
+    color:#e1d27b;
 }
 
-/* ================= BENEFITS ================= */
+
+/* =====================================================
+   BENEFITS
+===================================================== */
 
 .benefits{
     max-width:1400px;
-    margin:0 auto 30px;
-    background:#f3f5e5;
-    border-radius:20px;
-    padding:28px 5%;
+    margin:0 auto 35px;
+    background:
+        linear-gradient(135deg,rgba(26,67,43,.9),rgba(10,42,27,.9));
+    border-radius:22px;
+    padding:25px 4%;
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
+    border:1px solid rgba(181,191,130,.12);
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
 }
 
 .benefit{
     display:flex;
-    gap:14px;
+    gap:13px;
     align-items:center;
-    border-right:1px solid #ccd1bc;
+    border-right:1px solid rgba(255,255,255,.1);
     padding-right:20px;
 }
 
@@ -276,30 +413,37 @@ nav{
 }
 
 .benefit-icon{
-    min-width:50px;
-    height:50px;
-    border:2px solid #165c37;
-    border-radius:50%;
+    min-width:48px;
+    height:48px;
+    border:1px solid rgba(214,200,117,.5);
+    border-radius:14px;
+    background:rgba(214,200,117,.07);
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:23px;
+    font-size:21px;
 }
 
 .benefit h4{
-    margin-bottom:5px;
+    margin-bottom:4px;
+    font-size:13px;
+    color:#f2efd9;
 }
 
 .benefit p{
-    font-size:13px;
-    color:#677166;
+    font-size:10px;
+    color:#aebdb0;
 }
 
-/* ================= SHOP ================= */
 
-.shop-section{
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+.shop-section,
+.info-section{
     max-width:1400px;
-    margin:45px auto;
+    margin:55px auto;
     padding:0 20px;
 }
 
@@ -308,14 +452,21 @@ nav{
 }
 
 .section-title h2{
-    font-size:30px;
-    color:#08482a;
+    font-size:29px;
+    color:#f2efd9;
+    letter-spacing:-.5px;
 }
 
 .section-title p{
     margin-top:6px;
-    color:#657066;
+    color:#9eada2;
+    font-size:13px;
 }
+
+
+/* =====================================================
+   SHOP
+===================================================== */
 
 .shop-layout{
     display:grid;
@@ -330,21 +481,27 @@ nav{
 }
 
 .product{
-    background:white;
-    border:1px solid #dedfd5;
-    border-radius:13px;
+    background:
+        linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));
+    border:1px solid rgba(210,220,190,.12);
+    border-radius:17px;
     overflow:hidden;
-    transition:.25s;
+    transition:.35s;
+    backdrop-filter:blur(8px);
+    box-shadow:0 12px 35px rgba(0,0,0,.18);
 }
 
 .product:hover{
-    transform:translateY(-4px);
-    box-shadow:0 12px 30px rgba(0,0,0,.09);
+    transform:translateY(-8px);
+    border-color:rgba(214,200,117,.35);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        0 0 25px rgba(214,200,117,.06);
 }
 
 .product-image{
     height:190px;
-    background:#f5f5ed;
+    background:#102c1e;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -355,58 +512,73 @@ nav{
     width:100%;
     height:100%;
     object-fit:cover;
+    transition:.5s;
+}
+
+.product:hover .product-image img{
+    transform:scale(1.06);
 }
 
 .product-info{
-    padding:14px;
+    padding:15px;
 }
 
 .product-info h3{
-    font-size:15px;
-    color:#17251c;
+    font-size:14px;
+    color:#eee9d1;
     margin-bottom:7px;
 }
 
 .price{
-    font-size:17px;
-    font-weight:bold;
-    color:#064c2c;
-    margin-bottom:10px;
+    font-size:16px;
+    font-weight:700;
+    color:#d9cb78;
+    margin-bottom:11px;
 }
 
 .add-cart{
     width:100%;
     padding:10px;
-    background:white;
-    border:1px solid #155b35;
-    color:#124d2c;
-    border-radius:7px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(214,200,117,.3);
+    color:#e9e5cb;
+    border-radius:9px;
     cursor:pointer;
-    font-weight:bold;
+    font-family:inherit;
+    font-weight:600;
+    font-size:11px;
+    transition:.3s;
 }
 
 .add-cart:hover{
-    background:#0a713a;
+    background:#08763c;
     color:white;
+    border-color:#08763c;
+    transform:translateY(-2px);
 }
 
-/* ================= CART ================= */
+
+/* =====================================================
+   CART
+===================================================== */
 
 .cart{
-    background:white;
-    border-radius:20px;
+    background:
+        linear-gradient(145deg,#102f20,#092218);
+    border-radius:22px;
     padding:20px;
-    box-shadow:0 5px 25px rgba(0,0,0,.08);
-    border:1px solid #e3e4da;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    border:1px solid rgba(214,200,117,.18);
     height:max-content;
     position:sticky;
     top:105px;
 }
 
 .cart h2{
-    font-size:20px;
+    font-size:19px;
     padding-bottom:15px;
-    border-bottom:1px solid #ddd;
+    border-bottom:1px solid rgba(255,255,255,.1);
+    color:#f1ecd5;
 }
 
 .cart-items{
@@ -418,11 +590,11 @@ nav{
 .empty-cart{
     text-align:center;
     padding:35px 10px;
-    color:#68736b;
+    color:#89998c;
 }
 
 .empty-cart div{
-    font-size:45px;
+    font-size:43px;
     margin-bottom:10px;
 }
 
@@ -430,14 +602,14 @@ nav{
     display:flex;
     gap:10px;
     padding:12px 0;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .cart-item img{
     width:55px;
     height:55px;
     object-fit:cover;
-    border-radius:8px;
+    border-radius:9px;
 }
 
 .cart-item-info{
@@ -445,38 +617,44 @@ nav{
 }
 
 .cart-item-info h4{
-    font-size:13px;
+    font-size:12px;
+    color:#eee9d1;
     margin-bottom:5px;
 }
 
 .cart-item-info p{
-    font-weight:bold;
-    color:#08703a;
-    font-size:13px;
+    font-weight:700;
+    color:#d9cb78;
+    font-size:12px;
 }
 
 .quantity{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:7px;
     margin-top:7px;
 }
 
 .quantity button{
-    border:1px solid #bbb;
-    background:white;
+    border:1px solid rgba(255,255,255,.15);
+    background:rgba(255,255,255,.05);
+    color:#e9e5cb;
     width:25px;
     height:25px;
-    border-radius:5px;
+    border-radius:6px;
     cursor:pointer;
+}
+
+.quantity button:hover{
+    background:#08763c;
 }
 
 .remove{
     border:none !important;
     background:none !important;
-    color:#c33 !important;
+    color:#dc7777 !important;
     cursor:pointer;
-    font-size:12px;
+    font-size:10px;
     width:auto !important;
 }
 
@@ -484,62 +662,77 @@ nav{
     display:flex;
     justify-content:space-between;
     padding:17px 0;
-    font-size:18px;
-    font-weight:bold;
+    font-size:17px;
+    font-weight:700;
+    color:#f2efd9;
+}
+
+.cart-total span:last-child{
+    color:#d9cb78;
 }
 
 .checkout{
     width:100%;
     padding:14px;
     border:none;
-    border-radius:8px;
+    border-radius:9px;
     background:#08763c;
     color:white;
-    font-weight:bold;
-    font-size:15px;
+    font-family:inherit;
+    font-weight:700;
+    font-size:12px;
     cursor:pointer;
+    transition:.3s;
 }
 
 .checkout:hover{
-    background:#04582b;
+    background:#0a914b;
+    transform:translateY(-2px);
 }
 
 .cart-note{
     margin-top:10px;
-    font-size:12px;
+    font-size:9px;
     text-align:center;
-    color:#69736b;
+    color:#839488;
 }
 
-/* ================= MPESA ================= */
+
+/* =====================================================
+   MPESA
+===================================================== */
 
 .mpesa-section{
     max-width:1400px;
-    margin:45px auto;
+    margin:55px auto;
     padding:0 20px;
 }
 
 .mpesa-box{
-    background:linear-gradient(135deg,#eaf5e2,#f8f9ed);
-    border:1px solid #d5dfc9;
-    border-radius:22px;
+    background:
+        radial-gradient(circle at 90% 20%,rgba(214,200,117,.08),transparent 25%),
+        linear-gradient(135deg,#123d28,#092419);
+    border:1px solid rgba(214,200,117,.18);
+    border-radius:24px;
     padding:35px;
     display:flex;
     gap:25px;
     align-items:flex-start;
+    box-shadow:0 20px 55px rgba(0,0,0,.25);
 }
 
 .mpesa-icon{
-    width:70px;
-    height:70px;
-    min-width:70px;
-    border-radius:18px;
-    background:#08763c;
-    color:white;
+    width:68px;
+    height:68px;
+    min-width:68px;
+    border-radius:17px;
+    background:linear-gradient(135deg,#d8ca79,#9f944e);
+    color:#102819;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:32px;
+    font-size:29px;
+    box-shadow:0 10px 30px rgba(214,200,117,.13);
 }
 
 .mpesa-content{
@@ -547,26 +740,27 @@ nav{
 }
 
 .mpesa-label{
-    color:#08763c;
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:1px;
+    color:#d6c875;
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:1.5px;
 }
 
 .mpesa-content h2{
-    font-size:30px;
-    margin:6px 0;
-    color:#064b2b;
+    font-size:29px;
+    margin:5px 0;
+    color:#f3efd7;
 }
 
 .mpesa-content > p{
-    color:#5d685f;
+    color:#9eaea2;
     margin-bottom:20px;
+    font-size:13px;
 }
 
 .mpesa-number{
-    background:white;
-    border:1px solid #d7ddd0;
+    background:rgba(255,255,255,.045);
+    border:1px solid rgba(255,255,255,.1);
     border-radius:12px;
     padding:15px 18px;
     display:flex;
@@ -578,23 +772,30 @@ nav{
 
 .mpesa-number small{
     display:block;
-    color:#737b72;
+    color:#889a8c;
     margin-bottom:4px;
+    font-size:10px;
 }
 
 .mpesa-number strong{
-    font-size:22px;
-    color:#08763c;
+    font-size:21px;
+    color:#e0d37e;
 }
 
 .mpesa-number button{
     background:#08763c;
     color:white;
     border:none;
-    padding:11px 16px;
+    padding:10px 15px;
     border-radius:8px;
     cursor:pointer;
-    font-weight:bold;
+    font-family:inherit;
+    font-weight:600;
+    font-size:11px;
+}
+
+.mpesa-number button:hover{
+    background:#0a914b;
 }
 
 .mpesa-steps{
@@ -606,26 +807,28 @@ nav{
 
 .mpesa-steps div{
     display:flex;
-    gap:9px;
+    gap:8px;
     align-items:center;
 }
 
 .mpesa-steps span{
-    width:30px;
-    height:30px;
-    min-width:30px;
+    width:29px;
+    height:29px;
+    min-width:29px;
     border-radius:50%;
-    background:#dcebd2;
-    color:#08763c;
+    background:rgba(214,200,117,.12);
+    border:1px solid rgba(214,200,117,.3);
+    color:#d6c875;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-weight:bold;
+    font-weight:700;
+    font-size:11px;
 }
 
 .mpesa-steps p{
-    font-size:13px;
-    color:#4f5b52;
+    font-size:10px;
+    color:#a8b4aa;
 }
 
 .mpesa-whatsapp{
@@ -633,22 +836,22 @@ nav{
     background:#08763c;
     color:white;
     text-decoration:none;
-    padding:14px 20px;
+    padding:13px 19px;
     border-radius:9px;
-    font-weight:bold;
+    font-weight:700;
+    font-size:11px;
+    transition:.3s;
 }
 
 .mpesa-whatsapp:hover{
-    background:#045a2c;
+    background:#0a914b;
+    transform:translateY(-2px);
 }
 
-/* ================= DELIVERY INFO ================= */
 
-.info-section{
-    max-width:1400px;
-    margin:45px auto;
-    padding:0 20px;
-}
+/* =====================================================
+   INFORMATION CARDS
+===================================================== */
 
 .info-grid{
     display:grid;
@@ -657,58 +860,98 @@ nav{
 }
 
 .info-card{
-    background:white;
-    border:1px solid #e0e3d7;
+    background:
+        linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));
+    border:1px solid rgba(255,255,255,.09);
     border-radius:18px;
     padding:25px;
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(214,200,117,.3);
 }
 
 .info-card .icon{
-    font-size:30px;
+    font-size:29px;
     margin-bottom:10px;
 }
 
 .info-card h3{
-    color:#08482a;
+    color:#eee9d1;
     margin-bottom:8px;
+    font-size:17px;
 }
 
 .info-card p{
-    color:#657066;
-    line-height:1.6;
-    font-size:14px;
+    color:#9daea1;
+    line-height:1.7;
+    font-size:11px;
 }
 
-/* ================= ECO STRIP ================= */
+
+/* =====================================================
+   ECO STRIP
+===================================================== */
 
 .eco-strip{
     max-width:1400px;
-    margin:40px auto;
-    padding:28px 40px;
-    border-radius:20px;
-    background:#eef3df;
+    margin:50px auto;
+    padding:35px 40px;
+    border-radius:23px;
+
+    background:
+        radial-gradient(circle at 85% 50%,rgba(214,200,117,.1),transparent 30%),
+        linear-gradient(135deg,#183f2a,#0c291c);
+
+    border:1px solid rgba(214,200,117,.15);
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.22);
+}
+
+.eco-strip > div:first-child > div{
+    color:#d6c875;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 .eco-strip h2{
+    margin-top:7px;
+    color:#f0ecd6;
+    font-size:25px;
+}
+
+.eco-strip p{
+    color:#9aab9e;
+    font-size:12px;
     margin-top:5px;
 }
 
-/* ================= REVIEWS ================= */
+
+/* =====================================================
+   REVIEWS
+===================================================== */
 
 .reviews{
     max-width:1400px;
-    margin:45px auto;
-    padding:30px 5%;
-    background:#f2f5e7;
-    border-radius:20px;
+    margin:55px auto;
+    padding:35px 5%;
+    background:
+        linear-gradient(145deg,#102f20,#0a2117);
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.07);
 }
 
 .review-title{
     font-size:25px;
-    margin-bottom:25px;
+    margin-bottom:20px;
+    color:#f1edd8;
 }
 
 .rating-summary{
@@ -719,14 +962,20 @@ nav{
 }
 
 .rating-number{
-    font-size:40px;
-    font-weight:bold;
+    font-size:39px;
+    font-weight:800;
+    color:#d8ca79;
 }
 
 .stars{
-    color:#f0a800;
-    font-size:19px;
-    margin-bottom:10px;
+    color:#d8ca79;
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.rating-summary p{
+    color:#8e9d91;
+    font-size:10px;
 }
 
 .review-grid{
@@ -736,34 +985,47 @@ nav{
 }
 
 .review{
-    background:white;
+    background:rgba(255,255,255,.04);
     padding:22px;
-    border-radius:14px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.07);
+    transition:.3s;
+}
+
+.review:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,.065);
 }
 
 .review p{
-    color:#505a51;
-    line-height:1.5;
-    font-size:14px;
+    color:#a9b5ab;
+    line-height:1.7;
+    font-size:11px;
 }
 
 .reviewer{
     margin-top:13px;
-    font-weight:bold;
+    font-weight:600;
+    color:#e8e3cc;
+    font-size:11px;
 }
 
-/* ================= FOOTER ================= */
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer{
-    background:#064b2b;
+    background:#03150d;
     color:white;
-    margin-top:50px;
+    margin-top:60px;
+    border-top:1px solid rgba(214,200,117,.12);
 }
 
 .footer-main{
     max-width:1400px;
     margin:auto;
-    padding:35px 5%;
+    padding:40px 5%;
     display:grid;
     grid-template-columns:2fr 1fr 1fr 1fr;
     gap:30px;
@@ -771,13 +1033,15 @@ footer{
 
 footer h3{
     margin-bottom:12px;
+    color:#f0ecd5;
+    font-size:15px;
 }
 
 footer p,
 footer a{
-    color:#d7e5da;
-    font-size:14px;
-    line-height:1.8;
+    color:#91a196;
+    font-size:11px;
+    line-height:2;
 }
 
 footer a{
@@ -786,17 +1050,21 @@ footer a{
 }
 
 footer a:hover{
-    color:white;
+    color:#d6c875;
 }
 
 .copyright{
-    border-top:1px solid rgba(255,255,255,.2);
+    border-top:1px solid rgba(255,255,255,.06);
     text-align:center;
     padding:18px;
-    font-size:13px;
+    font-size:10px;
+    color:#738278;
 }
 
-/* ================= WHATSAPP ================= */
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
 
 .whatsapp{
     position:fixed;
@@ -804,19 +1072,37 @@ footer a:hover{
     bottom:20px;
     background:#20b858;
     color:white;
-    width:60px;
-    height:60px;
+    width:58px;
+    height:58px;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
+    font-size:26px;
     text-decoration:none;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    box-shadow:0 8px 30px rgba(32,184,88,.35);
     z-index:2000;
+    animation:whatsappPulse 2.5s infinite;
 }
 
-/* ================= MOBILE ================= */
+@keyframes whatsappPulse{
+
+    0%,100%{
+        box-shadow:0 8px 30px rgba(32,184,88,.3);
+    }
+
+    50%{
+        box-shadow:
+        0 8px 35px rgba(32,184,88,.55),
+        0 0 0 8px rgba(32,184,88,.08);
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media(max-width:1000px){
 
@@ -831,9 +1117,9 @@ footer a:hover{
         background:
         linear-gradient(
             180deg,
-            rgba(247,248,232,.96) 0%,
-            rgba(247,248,232,.75) 42%,
-            rgba(247,248,232,.05) 75%
+            rgba(241,239,216,.97) 0%,
+            rgba(241,239,216,.78) 43%,
+            rgba(241,239,216,.12) 78%
         ),
         url("hero.jpg") center/cover no-repeat;
 
@@ -846,11 +1132,11 @@ footer a:hover{
     }
 
     .hero h2{
-        font-size:52px;
+        font-size:55px;
     }
 
     .hero h3{
-        font-size:22px;
+        font-size:21px;
     }
 
     .price-badge{
@@ -896,12 +1182,14 @@ footer a:hover{
     .footer-main{
         grid-template-columns:1fr 1fr;
     }
+
 }
+
 
 @media(max-width:600px){
 
     .topbar{
-        font-size:11px;
+        font-size:9px;
         justify-content:center;
     }
 
@@ -915,44 +1203,49 @@ footer a:hover{
     }
 
     .logo h1{
-        font-size:20px;
+        font-size:19px;
     }
 
     .logo p{
-        font-size:9px;
+        font-size:8px;
     }
 
     .logo-icon{
         width:42px;
         height:42px;
+        border-radius:13px;
     }
 
     .cart-btn{
-        padding:10px 13px;
+        padding:9px 12px;
+        font-size:11px;
     }
 
     .hero{
         min-height:620px;
+        border-radius:22px;
     }
 
     .hero h2{
         font-size:43px;
+        letter-spacing:-2px;
     }
 
     .hero h3{
-        font-size:19px;
+        font-size:17px;
     }
 
     .hero p{
-        font-size:14px;
+        font-size:12px;
     }
 
     .features-mini{
-        gap:10px;
+        gap:7px;
     }
 
     .feature-mini{
-        font-size:11px;
+        font-size:9px;
+        padding:7px 9px;
     }
 
     .btn{
@@ -960,8 +1253,17 @@ footer a:hover{
         text-align:center;
     }
 
+    .price-badge{
+        padding:12px 20px;
+    }
+
+    .price-badge strong{
+        font-size:21px;
+    }
+
     .benefits{
         grid-template-columns:1fr;
+        border-radius:18px;
     }
 
     .benefit{
@@ -974,7 +1276,7 @@ footer a:hover{
     }
 
     .product-image{
-        height:150px;
+        height:145px;
     }
 
     .product-info{
@@ -982,21 +1284,35 @@ footer a:hover{
     }
 
     .product-info h3{
-        font-size:13px;
+        font-size:11px;
     }
 
     .price{
-        font-size:15px;
+        font-size:14px;
+    }
+
+    .add-cart{
+        font-size:9px;
+        padding:9px 4px;
     }
 
     .eco-strip{
-        margin:20px 15px;
+        margin:25px 15px;
         padding:25px;
+    }
+
+    .eco-strip h2{
+        font-size:20px;
+    }
+
+    .eco-strip > div:last-child{
+        display:none;
     }
 
     .mpesa-box{
         padding:25px;
         flex-direction:column;
+        border-radius:20px;
     }
 
     .mpesa-number{
@@ -1022,6 +1338,13 @@ footer a:hover{
         grid-template-columns:1fr;
     }
 
+    .whatsapp{
+        width:54px;
+        height:54px;
+        right:15px;
+        bottom:15px;
+    }
+
 }
 
 </style>
@@ -1031,7 +1354,9 @@ footer a:hover{
 <body>
 
 
-<!-- ================= TOP BAR ================= -->
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
 
 <div class="topbar">
 
@@ -1052,7 +1377,9 @@ footer a:hover{
 </div>
 
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
 
 <nav>
 
@@ -1063,8 +1390,15 @@ footer a:hover{
         </div>
 
         <div>
-            <h1>JIKO KOA</h1>
-            <p>Cook Smart. Save More. Live Green.</p>
+
+            <h1>
+                JIKO KOA
+            </h1>
+
+            <p>
+                Cook Smart. Save More. Live Green.
+            </p>
+
         </div>
 
     </div>
@@ -1073,22 +1407,34 @@ footer a:hover{
     <div class="navlinks">
 
         <a href="#home">Home</a>
+
         <a href="#shop">Shop</a>
+
         <a href="#about">About Us</a>
+
         <a href="#benefits">Benefits</a>
+
         <a href="#payment">M-Pesa</a>
+
         <a href="#reviews">Reviews</a>
+
         <a href="#contact">Contact</a>
 
     </div>
 
 
-    <button class="cart-btn" onclick="scrollToCart()">
+    <button
+    class="cart-btn"
+    onclick="scrollToCart()">
 
         🛒 Cart
 
-        <span class="cart-count" id="cartCount">
+        <span
+        class="cart-count"
+        id="cartCount">
+
             0
+
         </span>
 
     </button>
@@ -1096,9 +1442,13 @@ footer a:hover{
 </nav>
 
 
-<!-- ================= HERO ================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-<section class="hero" id="home">
+<section
+class="hero"
+id="home">
 
     <div class="hero-content">
 
@@ -1106,13 +1456,16 @@ footer a:hover{
             🌿 ECO-FRIENDLY
         </div>
 
+
         <h2>
             JIKO KOA
         </h2>
 
+
         <h3>
             MODERN CHARCOAL STOVES
         </h3>
+
 
         <p>
             High efficiency. Less charcoal. More heat.
@@ -1143,9 +1496,14 @@ footer a:hover{
 
         <div class="hero-buttons">
 
-            <a href="#shop" class="btn btn-green">
+            <a
+            href="#shop"
+            class="btn btn-green">
+
                 🛒 SHOP NOW
+
             </a>
+
 
             <a
             href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20Jiko."
@@ -1176,9 +1534,14 @@ footer a:hover{
 </section>
 
 
-<!-- ================= BENEFITS ================= -->
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
 
-<section class="benefits" id="benefits">
+<section
+class="benefits"
+id="benefits">
+
 
     <div class="benefit">
 
@@ -1187,8 +1550,15 @@ footer a:hover{
         </div>
 
         <div>
-            <h4>Eco Friendly</h4>
-            <p>Better for you, better for the planet.</p>
+
+            <h4>
+                Eco Friendly
+            </h4>
+
+            <p>
+                Better for you, better for the planet.
+            </p>
+
         </div>
 
     </div>
@@ -1201,8 +1571,15 @@ footer a:hover{
         </div>
 
         <div>
-            <h4>Fuel Efficient</h4>
-            <p>Designed to use less charcoal.</p>
+
+            <h4>
+                Fuel Efficient
+            </h4>
+
+            <p>
+                Designed to use less charcoal.
+            </p>
+
         </div>
 
     </div>
@@ -1215,8 +1592,15 @@ footer a:hover{
         </div>
 
         <div>
-            <h4>Durable & Safe</h4>
-            <p>Strong build for everyday cooking.</p>
+
+            <h4>
+                Durable & Safe
+            </h4>
+
+            <p>
+                Strong build for everyday cooking.
+            </p>
+
         </div>
 
     </div>
@@ -1229,18 +1613,31 @@ footer a:hover{
         </div>
 
         <div>
-            <h4>Free Delivery</h4>
-            <p>Free delivery within Nairobi.</p>
+
+            <h4>
+                Free Delivery
+            </h4>
+
+            <p>
+                Free delivery within Nairobi.
+            </p>
+
         </div>
 
     </div>
 
+
 </section>
 
 
-<!-- ================= SHOP ================= -->
+<!-- =====================================================
+     SHOP
+===================================================== -->
 
-<section class="shop-section" id="shop">
+<section
+class="shop-section"
+id="shop">
+
 
     <div class="section-title">
 
@@ -1544,9 +1941,14 @@ footer a:hover{
         </div>
 
 
-        <!-- ================= CART ================= -->
+        <!-- =================================================
+             CART
+        ================================================= -->
 
-        <aside class="cart" id="cart">
+        <aside
+        class="cart"
+        id="cart">
+
 
             <h2>
                 🛒 Your Cart
@@ -1556,6 +1958,7 @@ footer a:hover{
             <div
             class="cart-items"
             id="cartItems">
+
 
                 <div class="empty-cart">
 
@@ -1572,6 +1975,7 @@ footer a:hover{
                     </p>
 
                 </div>
+
 
             </div>
 
@@ -1604,19 +2008,27 @@ footer a:hover{
 
             </div>
 
+
         </aside>
 
 
     </div>
 
+
 </section>
 
 
-<!-- ================= MPESA ================= -->
+<!-- =====================================================
+     MPESA
+===================================================== -->
 
-<section class="mpesa-section" id="payment">
+<section
+class="mpesa-section"
+id="payment">
+
 
     <div class="mpesa-box">
+
 
         <div class="mpesa-icon">
             💳
@@ -1629,9 +2041,11 @@ footer a:hover{
                 EASY & SECURE PAYMENT
             </span>
 
+
             <h2>
                 Pay with M-Pesa
             </h2>
+
 
             <p>
                 Order your Jiko Koa and pay conveniently using M-Pesa.
@@ -1639,6 +2053,7 @@ footer a:hover{
 
 
             <div class="mpesa-number">
+
 
                 <div>
 
@@ -1653,9 +2068,13 @@ footer a:hover{
                 </div>
 
 
-                <button onclick="copyMpesaNumber()">
+                <button
+                onclick="copyMpesaNumber()">
+
                     📋 Copy Number
+
                 </button>
+
 
             </div>
 
@@ -1665,7 +2084,9 @@ footer a:hover{
 
                 <div>
 
-                    <span>1</span>
+                    <span>
+                        1
+                    </span>
 
                     <p>
                         Open M-Pesa on your phone
@@ -1676,7 +2097,9 @@ footer a:hover{
 
                 <div>
 
-                    <span>2</span>
+                    <span>
+                        2
+                    </span>
 
                     <p>
                         Select the appropriate payment option
@@ -1687,7 +2110,9 @@ footer a:hover{
 
                 <div>
 
-                    <span>3</span>
+                    <span>
+                        3
+                    </span>
 
                     <p>
                         Enter <b>0743 837 816</b>
@@ -1698,7 +2123,9 @@ footer a:hover{
 
                 <div>
 
-                    <span>4</span>
+                    <span>
+                        4
+                    </span>
 
                     <p>
                         Confirm the amount and complete payment
@@ -1719,16 +2146,22 @@ footer a:hover{
 
             </a>
 
+
         </div>
 
+
     </div>
+
 
 </section>
 
 
-<!-- ================= DELIVERY INFORMATION ================= -->
+<!-- =====================================================
+     INFORMATION
+===================================================== -->
 
 <section class="info-section">
+
 
     <div class="section-title">
 
@@ -1804,14 +2237,18 @@ footer a:hover{
 
     </div>
 
+
 </section>
 
 
-<!-- ================= ECO MESSAGE ================= -->
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 
 <section
 class="eco-strip"
 id="about">
+
 
     <div>
 
@@ -1834,14 +2271,18 @@ id="about">
         🍃
     </div>
 
+
 </section>
 
 
-<!-- ================= REVIEWS ================= -->
+<!-- =====================================================
+     REVIEWS
+===================================================== -->
 
 <section
 class="reviews"
 id="reviews">
+
 
     <h2 class="review-title">
         What Our Customers Say
@@ -1928,12 +2369,17 @@ id="reviews">
 
     </div>
 
+
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-<footer id="contact">
+<footer
+id="contact">
+
 
     <div class="footer-main">
 
@@ -2036,10 +2482,13 @@ id="reviews">
 
     </div>
 
+
 </footer>
 
 
-<!-- ================= FLOATING WHATSAPP ================= -->
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
 
 <a
 class="whatsapp"
@@ -2052,10 +2501,16 @@ title="Chat with Jiko Koa on WhatsApp">
 </a>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script>
 
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
 
 const products = {
 
@@ -2113,7 +2568,9 @@ const products = {
 let cart = {};
 
 
-/* ================= ADD TO CART ================= */
+/* =====================================================
+   ADD TO CART
+===================================================== */
 
 function addToCart(id){
 
@@ -2123,7 +2580,7 @@ function addToCart(id){
 
     }else{
 
-        cart[id] = {
+        cart[id]={
             ...products[id],
             quantity:1
         };
@@ -2132,15 +2589,21 @@ function addToCart(id){
 
     updateCart();
 
-    document.getElementById("cart").scrollIntoView({
+
+    document.getElementById("cart")
+    .scrollIntoView({
+
         behavior:"smooth",
         block:"center"
+
     });
 
 }
 
 
-/* ================= QUANTITY ================= */
+/* =====================================================
+   CHANGE QUANTITY
+===================================================== */
 
 function changeQuantity(id,change){
 
@@ -2150,18 +2613,22 @@ function changeQuantity(id,change){
 
     cart[id].quantity += change;
 
+
     if(cart[id].quantity <= 0){
 
         delete cart[id];
 
     }
 
+
     updateCart();
 
 }
 
 
-/* ================= REMOVE ================= */
+/* =====================================================
+   REMOVE ITEM
+===================================================== */
 
 function removeFromCart(id){
 
@@ -2172,7 +2639,9 @@ function removeFromCart(id){
 }
 
 
-/* ================= UPDATE CART ================= */
+/* =====================================================
+   UPDATE CART
+===================================================== */
 
 function updateCart(){
 
@@ -2182,40 +2651,44 @@ function updateCart(){
     const ids =
         Object.keys(cart);
 
-    let totalItems = 0;
+    let totalItems=0;
 
-    let total = 0;
+    let total=0;
 
 
-    if(ids.length === 0){
+    if(ids.length===0){
 
-        container.innerHTML = `
+        container.innerHTML=`
 
-        <div class="empty-cart">
+            <div class="empty-cart">
 
-            <div>🛒</div>
+                <div>
+                    🛒
+                </div>
 
-            <strong>
-                Your cart is empty
-            </strong>
+                <strong>
+                    Your cart is empty
+                </strong>
 
-            <p>
-                Add items to get started.
-            </p>
+                <p>
+                    Add items to get started.
+                </p>
 
-        </div>
+            </div>
 
         `;
 
     }else{
 
 
-        container.innerHTML = ids.map(id => {
+        container.innerHTML =
+        ids.map(id=>{
 
-            const item = cart[id];
+            const item=cart[id];
 
             const subtotal =
-                item.price * item.quantity;
+                item.price*item.quantity;
+
 
             totalItems += item.quantity;
 
@@ -2224,52 +2697,57 @@ function updateCart(){
 
             return `
 
-            <div class="cart-item">
+                <div class="cart-item">
 
-                <img
-                src="${item.image}"
-                alt="${item.name}">
-
-                <div class="cart-item-info">
-
-                    <h4>
-                        ${item.name}
-                    </h4>
-
-                    <p>
-                        KSh ${subtotal.toLocaleString()}
-                    </p>
+                    <img
+                    src="${item.image}"
+                    alt="${item.name}">
 
 
-                    <div class="quantity">
+                    <div class="cart-item-info">
 
-                        <button
-                        onclick="changeQuantity(${id},-1)">
-                            −
-                        </button>
+                        <h4>
+                            ${item.name}
+                        </h4>
 
-                        <span>
-                            ${item.quantity}
-                        </span>
 
-                        <button
-                        onclick="changeQuantity(${id},1)">
-                            +
-                        </button>
+                        <p>
+                            KSh ${subtotal.toLocaleString()}
+                        </p>
 
-                        <button
-                        class="remove"
-                        onclick="removeFromCart(${id})">
 
-                            Remove
+                        <div class="quantity">
 
-                        </button>
+                            <button
+                            onclick="changeQuantity(${id},-1)">
+                                −
+                            </button>
+
+
+                            <span>
+                                ${item.quantity}
+                            </span>
+
+
+                            <button
+                            onclick="changeQuantity(${id},1)">
+                                +
+                            </button>
+
+
+                            <button
+                            class="remove"
+                            onclick="removeFromCart(${id})">
+
+                                Remove
+
+                            </button>
+
+                        </div>
 
                     </div>
 
                 </div>
-
-            </div>
 
             `;
 
@@ -2279,25 +2757,27 @@ function updateCart(){
 
 
     document.getElementById("cartCount")
-    .textContent = totalItems;
+    .textContent=totalItems;
 
 
     document.getElementById("cartTotal")
-    .textContent =
-        "KSh " + total.toLocaleString();
+    .textContent=
+        "KSh "+total.toLocaleString();
 
 }
 
 
-/* ================= WHATSAPP CHECKOUT ================= */
+/* =====================================================
+   WHATSAPP CHECKOUT
+===================================================== */
 
 function checkoutWhatsApp(){
 
-    const ids =
+    const ids=
         Object.keys(cart);
 
 
-    if(ids.length === 0){
+    if(ids.length===0){
 
         alert(
             "Your cart is empty. Please add a jiko first."
@@ -2308,38 +2788,40 @@ function checkoutWhatsApp(){
     }
 
 
-    let message =
+    let message=
         "Hello Jiko Koa! I would like to order:%0A%0A";
 
 
-    let total = 0;
+    let total=0;
 
 
-    ids.forEach(id => {
+    ids.forEach(id=>{
 
-        const item = cart[id];
+        const item=cart[id];
 
-        const subtotal =
-            item.price * item.quantity;
+
+        const subtotal=
+            item.price*item.quantity;
+
 
         total += subtotal;
 
 
         message +=
-            "• " +
-            item.name +
-            " x" +
-            item.quantity +
-            " - KSh " +
-            subtotal.toLocaleString() +
+            "• "+
+            item.name+
+            " x"+
+            item.quantity+
+            " - KSh "+
+            subtotal.toLocaleString()+
             "%0A";
 
     });
 
 
     message +=
-        "%0A*Total: KSh " +
-        total.toLocaleString() +
+        "%0A*Total: KSh "+
+        total.toLocaleString()+
         "*";
 
 
@@ -2352,7 +2834,7 @@ function checkoutWhatsApp(){
 
 
     window.open(
-        "https://wa.me/254731519162?text=" +
+        "https://wa.me/254731519162?text="+
         message,
         "_blank"
     );
@@ -2360,11 +2842,13 @@ function checkoutWhatsApp(){
 }
 
 
-/* ================= COPY MPESA ================= */
+/* =====================================================
+   COPY MPESA NUMBER
+===================================================== */
 
 function copyMpesaNumber(){
 
-    const number =
+    const number=
         "0743837816";
 
 
@@ -2401,7 +2885,9 @@ function copyMpesaNumber(){
 }
 
 
-/* ================= SCROLL TO CART ================= */
+/* =====================================================
+   SCROLL TO CART
+===================================================== */
 
 function scrollToCart(){
 
@@ -2416,7 +2902,9 @@ function scrollToCart(){
 }
 
 
-/* ================= START CART ================= */
+/* =====================================================
+   INITIALIZE CART
+===================================================== */
 
 updateCart();
 
