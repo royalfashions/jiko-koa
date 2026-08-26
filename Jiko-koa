@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JIKO KOA | Online Retail Store Nairobi</title>
+
+<meta name="description"
+content="JIKO KOA is a retail shopping store in Nairobi, Kenya. Shop quality products at affordable prices.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    background:#f68b1e;
+    color:white;
+    padding:7px 5%;
+    font-size:13px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* HEADER */
+
+header{
+    background:#f68b1e;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.header-main{
+    max-width:1250px;
+    margin:auto;
+    padding:14px 18px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:900;
+    white-space:nowrap;
+}
+
+.logo span{
+    display:block;
+    font-size:11px;
+    letter-spacing:2px;
+    text-align:center;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+    background:white;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    font-size:15px;
+}
+
+.search-box button{
+    border:none;
+    background:#ff9900;
+    color:white;
+    padding:0 22px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.header-link{
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.cart-button{
+    position:relative;
+    cursor:pointer;
+    font-size:25px;
+}
+
+.cart-count{
+    position:absolute;
+    top:-9px;
+    right:-10px;
+    background:#e60000;
+    color:white;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:bold;
+}
+
+/* NAV */
+
+.navbar{
+    background:#fff;
+    border-bottom:1px solid #ddd;
+}
+
+.nav-inner{
+    max-width:1250px;
+    margin:auto;
+    padding:11px 18px;
+    display:flex;
+    gap:25px;
+    overflow:auto;
+}
+
+.nav-inner a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+.nav-inner a:hover{
+    color:#f68b1e;
+}
+
+/* MAIN */
+
+.container{
+    max-width:1250px;
+    margin:auto;
+    padding:18px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:340px;
+    border-radius:8px;
+    overflow:hidden;
+    background:
+    linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.25)),
+    linear-gradient(135deg,#111,#555);
+    display:flex;
+    align-items:center;
+    color:white;
+    margin-bottom:22px;
+}
+
+.hero-content{
+    padding:45px;
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:12px;
+}
+
+.hero p{
+    font-size:19px;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#f68b1e;
+    color:white;
+    padding:14px 28px;
+    border-radius:5px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTION */
+
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:25px 0 15px;
+}
+
+.section-title h2{
+    font-size:24px;
+}
+
+.section-title a{
+    color:#f68b1e;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* CATEGORIES */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:12px;
+}
+
+.category{
+    background:white;
+    border-radius:7px;
+    padding:18px 8px;
+    text-align:center;
+    box-shadow:0 1px 5px rgba(0,0,0,.12);
+    cursor:pointer;
+    transition:.2s;
+}
+
+.category:hover{
+    transform:translateY(-3px);
+    box-shadow:0 4px 10px rgba(0,0,0,.18);
+}
+
+.category-icon{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.category-name{
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* FLASH SALE */
+
+.flash{
+    background:white;
+    border-radius:8px;
+    padding:18px;
+    margin-top:25px;
+}
+
+.flash-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+}
+
+.flash-header h2{
+    color:#e60000;
+}
+
+.timer{
+    background:#222;
+    color:white;
+    padding:8px 12px;
+    border-radius:4px;
+    font-weight:bold;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.product{
+    background:white;
+    border-radius:7px;
+    overflow:hidden;
+    box-shadow:0 1px 5px rgba(0,0,0,.12);
+    position:relative;
+    transition:.2s;
+}
+
+.product:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 14px rgba(0,0,0,.18);
+}
+
+.product-image{
+    height:190px;
+    background:linear-gradient(135deg,#eee,#ddd);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:70px;
+}
+
+.badge{
+    position:absolute;
+    left:9px;
+    top:9px;
+    background:#e60000;
+    color:white;
+    padding:5px 8px;
+    border-radius:3px;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.product-info{
+    padding:13px;
+}
+
+.product-name{
+    min-height:38px;
+    font-size:14px;
+    line-height:1.4;
+}
+
+.stars{
+    color:#ffb400;
+    margin:6px 0;
+    font-size:13px;
+}
+
+.reviews{
+    color:#888;
+    font-size:11px;
+}
+
+.price{
+    font-size:19px;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:12px;
+    margin-top:3px;
+}
+
+.add-cart{
+    width:100%;
+    border:none;
+    background:#f68b1e;
+    color:white;
+    padding:11px;
+    border-radius:4px;
+    margin-top:9px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.add-cart:hover{
+    background:#dd7200;
+}
+
+/* BENEFITS */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.benefit{
+    background:white;
+    padding:25px 15px;
+    text-align:center;
+    border-radius:7px;
+}
+
+.benefit-icon{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.benefit h3{
+    font-size:15px;
+    margin-bottom:5px;
+}
+
+.benefit p{
+    color:#777;
+    font-size:12px;
+    line-height:1.5;
+}
+
+/* REVIEWS */
+
+.reviews-section{
+    background:white;
+    border-radius:8px;
+    padding:22px;
+    margin-top:25px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.review{
+    border:1px solid #eee;
+    padding:18px;
+    border-radius:6px;
+}
+
+.review-stars{
+    color:#ffb400;
+    margin-bottom:8px;
+}
+
+.review p{
+    color:#555;
+    font-size:14px;
+    line-height:1.5;
+}
+
+.review strong{
+    display:block;
+    margin-top:10px;
+}
+
+/* LOCATION */
+
+.location{
+    background:#222;
+    color:white;
+    border-radius:8px;
+    padding:30px;
+    margin-top:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.location h2{
+    margin-bottom:8px;
+}
+
+.location p{
+    color:#ccc;
+}
+
+.map-btn{
+    background:#f68b1e;
+    color:white;
+    padding:13px 20px;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:35px;
+    background:#202020;
+    color:white;
+}
+
+.footer-grid{
+    max-width:1250px;
+    margin:auto;
+    padding:40px 18px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:30px;
+}
+
+.footer-grid h3{
+    color:#f68b1e;
+    margin-bottom:15px;
+}
+
+.footer-grid p,
+.footer-grid li{
+    color:#ccc;
+    font-size:13px;
+    line-height:1.9;
+}
+
+.footer-grid ul{
+    list-style:none;
+}
+
+.copyright{
+    text-align:center;
+    background:#111;
+    color:#999;
+    padding:15px;
+    font-size:12px;
+}
+
+/* CART */
+
+.cart-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    z-index:1500;
+    display:none;
+}
+
+.cart-overlay.active{
+    display:block;
+}
+
+.cart-panel{
+    position:fixed;
+    right:-430px;
+    top:0;
+    width:420px;
+    max-width:95%;
+    height:100vh;
+    background:white;
+    z-index:2000;
+    transition:.3s;
+    padding:20px;
+    overflow:auto;
+}
+
+.cart-panel.active{
+    right:0;
+}
+
+.cart-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.close-cart{
+    font-size:28px;
+    cursor:pointer;
+}
+
+.cart-item{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.cart-item-name{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.quantity{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-top:8px;
+}
+
+.quantity button{
+    border:1px solid #ddd;
+    background:white;
+    width:25px;
+    height:25px;
+    cursor:pointer;
+}
+
+.remove{
+    border:none;
+    background:none;
+    color:red;
+    cursor:pointer;
+}
+
+.cart-total{
+    font-size:20px;
+    font-weight:bold;
+    padding:20px 0;
+}
+
+.checkout{
+    width:100%;
+    border:none;
+    padding:15px;
+    background:#25d366;
+    color:white;
+    border-radius:5px;
+    font-weight:bold;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.empty{
+    text-align:center;
+    padding:40px 10px;
+    color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:1000px){
+
+    .products{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .categories{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+@media(max-width:700px){
+
+    .top-bar{
+        font-size:10px;
+    }
+
+    .header-main{
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .header-link{
+        display:none;
+    }
+
+    .search-box{
+        order:3;
+        flex-basis:100%;
+    }
+
+    .navbar{
+        overflow:hidden;
+    }
+
+    .nav-inner{
+        gap:18px;
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:280px;
+    }
+
+    .hero-content{
+        padding:28px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .categories{
+        grid-template-columns:repeat(4,1fr);
+        gap:7px;
+    }
+
+    .category{
+        padding:12px 4px;
+    }
+
+    .category-icon{
+        font-size:28px;
+    }
+
+    .category-name{
+        font-size:10px;
+    }
+
+    .products{
+        grid-template-columns:repeat(2,1fr);
+        gap:9px;
+    }
+
+    .product-image{
+        height:145px;
+    }
+
+    .product-info{
+        padding:10px;
+    }
+
+    .product-name{
+        font-size:13px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .benefits{
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+    }
+
+    .review-grid{
+        grid-template-columns:1fr;
+    }
+
+    .location{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:420px){
+
+    .categories{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+    <span>Welcome to JIKO KOA</span>
+    <span>Quality • Value • Convenience</span>
+</div>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-main">
+
+<div class="logo">
+    🛒 JIKO KOA
+    <span>RETAIL</span>
+</div>
+
+<div class="search-box">
+    <input
+        id="searchInput"
+        type="search"
+        placeholder="Search products..."
+    >
+    <button onclick="searchProducts()">🔍</button>
+</div>
+
+<div class="header-link">
+    👤 Account
+</div>
+
+<div class="cart-button" onclick="openCart()">
+    🛒
+    <span class="cart-count" id="cartCount">0</span>
+</div>
+
+</div>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+<div class="nav-inner">
+
+<a href="#">Home</a>
+<a href="#categories">Categories</a>
+<a href="#deals">Flash Sale</a>
+<a href="#products">Products</a>
+<a href="#reviews">Reviews</a>
+<a href="#location">Location</a>
+
+</div>
+
+</nav>
+
+<!-- MAIN -->
+
+<main class="container">
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SHOP SMART WITH JIKO KOA</h1>
+
+<p>
+Discover quality products at affordable prices.
+Shop conveniently from anywhere in Nairobi.
+</p>
+
+<a href="#products" class="hero-btn">
+SHOP NOW
+</a>
+
+</div>
+
+</section>
+
+<!-- CATEGORIES -->
+
+<section id="categories">
+
+<div class="section-title">
+<h2>Shop By Category</h2>
+<a href="#products">View All</a>
+</div>
+
+<div class="categories">
+
+<div class="category" onclick="filterCategory('Fashion')">
+<div class="category-icon">👕</div>
+<div class="category-name">Fashion</div>
+</div>
+
+<div class="category" onclick="filterCategory('Shoes')">
+<div class="category-icon">👟</div>
+<div class="category-name">Shoes</div>
+</div>
+
+<div class="category" onclick="filterCategory('Electronics')">
+<div class="category-icon">📱</div>
+<div class="category-name">Electronics</div>
+</div>
+
+<div class="category" onclick="filterCategory('Home')">
+<div class="category-icon">🏠</div>
+<div class="category-name">Home</div>
+</div>
+
+<div class="category" onclick="filterCategory('Beauty')">
+<div class="category-icon">💄</div>
+<div class="category-name">Beauty</div>
+</div>
+
+<div class="category" onclick="filterCategory('Accessories')">
+<div class="category-icon">👜</div>
+<div class="category-name">Accessories</div>
+</div>
+
+<div class="category" onclick="filterCategory('All')">
+<div class="category-icon">🛍️</div>
+<div class="category-name">All Products</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- FLASH SALE -->
+
+<section class="flash" id="deals">
+
+<div class="flash-header">
+
+<h2>🔥 FLASH SALE</h2>
+
+<div class="timer">
+LIMITED DEALS
+</div>
+
+</div>
+
+<div class="products" id="products">
+
+<!-- 1 -->
+
+<div class="product" data-category="Shoes">
+
+<span class="badge">-20%</span>
+
+<div class="product-image">👟</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Premium Casual Sneakers
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(18)</span>
+</div>
+
+<div class="price">KSh 1,999</div>
+<div class="old-price">KSh 2,500</div>
+
+<button class="add-cart"
+onclick="addToCart('Premium Casual Sneakers',1999)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 2 -->
+
+<div class="product" data-category="Fashion">
+
+<span class="badge">-15%</span>
+
+<div class="product-image">👕</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Premium Cotton T-Shirt
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(24)</span>
+</div>
+
+<div class="price">KSh 899</div>
+<div class="old-price">KSh 1,050</div>
+
+<button class="add-cart"
+onclick="addToCart('Premium Cotton T-Shirt',899)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 3 -->
+
+<div class="product" data-category="Accessories">
+
+<div class="product-image">👜</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Ladies Fashion Handbag
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(12)</span>
+</div>
+
+<div class="price">KSh 1,499</div>
+
+<button class="add-cart"
+onclick="addToCart('Ladies Fashion Handbag',1499)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 4 -->
+
+<div class="product" data-category="Accessories">
+
+<span class="badge">-25%</span>
+
+<div class="product-image">⌚</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Fashion Smart Watch
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(31)</span>
+</div>
+
+<div class="price">KSh 1,299</div>
+<div class="old-price">KSh 1,700</div>
+
+<button class="add-cart"
+onclick="addToCart('Fashion Smart Watch',1299)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 5 -->
+
+<div class="product" data-category="Electronics">
+
+<div class="product-image">🎧</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Wireless Bluetooth Headphones
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(27)</span>
+</div>
+
+<div class="price">KSh 1,799</div>
+
+<button class="add-cart"
+onclick="addToCart('Wireless Bluetooth Headphones',1799)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 6 -->
+
+<div class="product" data-category="Fashion">
+
+<span class="badge">NEW</span>
+
+<div class="product-image">👖</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Classic Denim Jeans
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(16)</span>
+</div>
+
+<div class="price">KSh 1,899</div>
+
+<button class="add-cart"
+onclick="addToCart('Classic Denim Jeans',1899)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 7 -->
+
+<div class="product" data-category="Shoes">
+
+<div class="product-image">👞</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Men's Formal Leather Shoes
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(21)</span>
+</div>
+
+<div class="price">KSh 2,499</div>
+
+<button class="add-cart"
+onclick="addToCart('Mens Formal Leather Shoes',2499)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 8 -->
+
+<div class="product" data-category="Beauty">
+
+<div class="product-image">💄</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Beauty Makeup Set
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(14)</span>
+</div>
+
+<div class="price">KSh 1,299</div>
+
+<button class="add-cart"
+onclick="addToCart('Beauty Makeup Set',1299)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 9 -->
+
+<div class="product" data-category="Home">
+
+<span class="badge">HOT</span>
+
+<div class="product-image">🍳</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Non-Stick Cooking Pan
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(39)</span>
+</div>
+
+<div class="price">KSh 1,499</div>
+
+<button class="add-cart"
+onclick="addToCart('Non Stick Cooking Pan',1499)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 10 -->
+
+<div class="product" data-category="Electronics">
+
+<div class="product-image">🔊</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Portable Bluetooth Speaker
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(28)</span>
+</div>
+
+<div class="price">KSh 1,599</div>
+
+<button class="add-cart"
+onclick="addToCart('Portable Bluetooth Speaker',1599)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 11 -->
+
+<div class="product" data-category="Accessories">
+
+<div class="product-image">🕶️</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Classic Fashion Sunglasses
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(11)</span>
+</div>
+
+<div class="price">KSh 699</div>
+
+<button class="add-cart"
+onclick="addToCart('Classic Fashion Sunglasses',699)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 12 -->
+
+<div class="product" data-category="Home">
+
+<div class="product-image">🛏️</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Soft Home Blanket
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(19)</span>
+</div>
+
+<div class="price">KSh 1,799</div>
+
+<button class="add-cart"
+onclick="addToCart('Soft Home Blanket',1799)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 13 -->
+
+<div class="product" data-category="Fashion">
+
+<div class="product-image">👗</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Ladies Casual Dress
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(22)</span>
+</div>
+
+<div class="price">KSh 1,699</div>
+
+<button class="add-cart"
+onclick="addToCart('Ladies Casual Dress',1699)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 14 -->
+
+<div class="product" data-category="Shoes">
+
+<div class="product-image">🩴</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Comfortable Casual Sandals
+</div>
+
+<div class="stars">
+★★★★☆ <span class="reviews">(17)</span>
+</div>
+
+<div class="price">KSh 999</div>
+
+<button class="add-cart"
+onclick="addToCart('Comfortable Casual Sandals',999)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+<!-- 15 -->
+
+<div class="product" data-category="Electronics">
+
+<span class="badge">DEAL</span>
+
+<div class="product-image">🔌</div>
+
+<div class="product-info">
+
+<div class="product-name">
+Fast USB Charger
+</div>
+
+<div class="stars">
+★★★★★ <span class="reviews">(44)</span>
+</div>
+
+<div class="price">KSh 599</div>
+
+<button class="add-cart"
+onclick="addToCart('Fast USB Charger',599)">
+ADD TO CART
+</button>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<div class="section-title">
+<h2>Why Shop With JIKO KOA?</h2>
+</div>
+
+<section class="benefits">
+
+<div class="benefit">
+<div class="benefit-icon">🚚</div>
+<h3>Fast Delivery</h3>
+<p>Convenient delivery within Nairobi and surrounding areas.</p>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">💰</div>
+<h3>Affordable Prices</h3>
+<p>Great products at competitive Kenyan prices.</p>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">🛒</div>
+<h3>Easy Shopping</h3>
+<p>Add products to your cart and order easily.</p>
+</div>
+
+<div class="benefit">
+<div class="benefit-icon">💬</div>
+<h3>Customer Support</h3>
+<p>Contact JIKO KOA whenever you need assistance.</p>
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews-section" id="reviews">
+
+<div class="section-title">
+<h2>⭐ Customer Reviews</h2>
+</div>
+
+<div class="review-grid">
+
+<div class="review">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p>
+"Great prices and very good customer service. I would shop here again."
+</p>
+
+<strong>— Brian, Nairobi</strong>
+
+</div>
+
+<div class="review">
+
+<div class="review-stars">
+★★★★★
+</div>
+
+<p>
+"I found exactly what I was looking for and the ordering process was easy."
+</p>
+
+<strong>— Mary, Nairobi</strong>
+
+</div>
+
+<div class="review">
+
+<div class="review-stars">
+★★★★☆
+</div>
+
+<p>
+"Good selection of products and affordable prices."
+</p>
+
+<strong>— Kevin, Nairobi</strong>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section class="location" id="location">
+
+<div>
+
+<h2>📍 JIKO KOA — Nairobi</h2>
+
+<p>
+Serving customers in Nairobi and surrounding areas.
+</p>
+
+</div>
+
+<a
+class="map-btn"
+href="https://www.google.com/maps/search/?api=1&query=Nairobi%2C%20Kenya"
+target="_blank">
+VIEW LOCATION
+</a>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+
+<h3>JIKO KOA</h3>
+
+<p>
+JIKO KOA is a Kenyan retail shop offering a convenient
+shopping experience with quality products at affordable prices.
+</p>
+
+</div>
+
+<div>
+
+<h3>Shop</h3>
+
+<ul>
+<li>Fashion</li>
+<li>Shoes</li>
+<li>Electronics</li>
+<li>Home</li>
+<li>Beauty</li>
+</ul>
+
+</div>
+
+<div>
+
+<h3>Customer Care</h3>
+
+<ul>
+<li>Contact Us</li>
+<li>Delivery</li>
+<li>Returns</li>
+<li>Order Help</li>
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Nairobi, Kenya</p>
+<p>📱 WhatsApp Orders</p>
+<p>🛒 Online Shopping</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 JIKO KOA. All Rights Reserved.
+</div>
+
+</footer>
+
+<!-- CART OVERLAY -->
+
+<div
+class="cart-overlay"
+id="cartOverlay"
+onclick="closeCart()">
+</div>
+
+<!-- CART -->
+
+<div class="cart-panel" id="cartPanel">
+
+<div class="cart-head">
+
+<h2>🛒 Your Cart</h2>
+
+<span
+class="close-cart"
+onclick="closeCart()">×</span>
+
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-total">
+Total: KSh <span id="cartTotal">0</span>
+</div>
+
+<button
+class="checkout"
+onclick="checkoutWhatsApp()">
+
+📱 ORDER VIA WHATSAPP
+
+</button>
+
+</div>
+
+<script>
+
+let cart=[];
+
+/* ADD TO CART */
+
+function addToCart(name,price){
+
+let existing=cart.find(item=>item.name===name);
+
+if(existing){
+
+existing.quantity++;
+
+}else{
+
+cart.push({
+name:name,
+price:price,
+quantity:1
+});
+
+}
+
+updateCart();
+
+openCart();
+
+}
+
+/* UPDATE CART */
+
+function updateCart(){
+
+const count=document.getElementById("cartCount");
+
+let totalQuantity=0;
+
+cart.forEach(item=>{
+totalQuantity+=item.quantity;
+});
+
+count.innerText=totalQuantity;
+
+const container=document.getElementById("cartItems");
+
+if(cart.length===0){
+
+container.innerHTML=`
+<div class="empty">
+🛒<br><br>
+Your cart is empty.
+</div>
+`;
+
+document.getElementById("cartTotal").innerText="0";
+
+return;
+
+}
+
+container.innerHTML="";
+
+let total=0;
+
+cart.forEach((item,index)=>{
+
+let itemTotal=item.price*item.quantity;
+
+total+=itemTotal;
+
+container.innerHTML+=`
+
+<div class="cart-item">
+
+<div>
+
+<div class="cart-item-name">
+${item.name}
+</div>
+
+<div>
+KSh ${item.price.toLocaleString()}
+</div>
+
+<div class="quantity">
+
+<button onclick="changeQuantity(${index},-1)">
+−
+</button>
+
+<span>${item.quantity}</span>
+
+<button onclick="changeQuantity(${index},1)">
++
+</button>
+
+</div>
+
+</div>
+
+<button
+class="remove"
+onclick="removeItem(${index})">
+Remove
+</button>
+
+</div>
+
+`;
+
+});
+
+document.getElementById("cartTotal")
+.innerText=total.toLocaleString();
+
+}
+
+/* QUANTITY */
+
+function changeQuantity(index,change){
+
+cart[index].quantity+=change;
+
+if(cart[index].quantity<=0){
+
+cart.splice(index,1);
+
+}
+
+updateCart();
+
+}
+
+/* REMOVE */
+
+function removeItem(index){
+
+cart.splice(index,1);
+
+updateCart();
+
+}
+
+/* OPEN CART */
+
+function openCart(){
+
+document
+.getElementById("cartPanel")
+.classList.add("active");
+
+document
+.getElementById("cartOverlay")
+.classList.add("active");
+
+}
+
+/* CLOSE CART */
+
+function closeCart(){
+
+document
+.getElementById("cartPanel")
+.classList.remove("active");
+
+document
+.getElementById("cartOverlay")
+.classList.remove("active");
+
+}
+
+/* SEARCH */
+
+function searchProducts(){
+
+let query=document
+.getElementById("searchInput")
+.value
+.toLowerCase();
+
+let products=document
+.querySelectorAll(".product");
+
+products.forEach(product=>{
+
+let text=product.innerText.toLowerCase();
+
+product.style.display=
+text.includes(query) ? "" : "none";
+
+});
+
+}
+
+/* LIVE SEARCH */
+
+document
+.getElementById("searchInput")
+.addEventListener(
+"input",
+searchProducts
+);
+
+/* CATEGORY FILTER */
+
+function filterCategory(category){
+
+let products=document
+.querySelectorAll(".product");
+
+products.forEach(product=>{
+
+if(category==="All"){
+
+product.style.display="";
+
+}else{
+
+product.style.display=
+product.dataset.category===category
+? ""
+: "none";
+
+}
+
+});
+
+document
+.getElementById("products")
+.scrollIntoView({
+behavior:"smooth"
+});
+
+}
+
+/* WHATSAPP CHECKOUT */
+
+function checkoutWhatsApp(){
+
+if(cart.length===0){
+
+alert("Your cart is empty.");
+
+return;
+
+}
+
+/*
+REPLACE THIS NUMBER WITH
+JIKO KOA'S REAL WHATSAPP NUMBER.
+
+Example:
+254712345678
+*/
+
+const phone="254700000000";
+
+let message=
+"Hello JIKO KOA!%0A%0A"+
+"I would like to place an order:%0A%0A";
+
+let total=0;
+
+cart.forEach(item=>{
+
+let subtotal=
+item.price*item.quantity;
+
+total+=subtotal;
+
+message+=
+"• "+item.name+
+" x"+item.quantity+
+" — KSh "+
+subtotal.toLocaleString()+
+"%0A";
+
+});
+
+message+=
+"%0A*Total: KSh "+
+total.toLocaleString()+
+"*%0A%0A"+
+"Please confirm availability and delivery.";
+
+window.open(
+"https://wa.me/"+
+phone+
+"?text="+
+message,
+"_blank"
+);
+
+}
+
+/* INITIAL CART */
+
+updateCart();
+
+</script>
+
+</body>
+</html>
