@@ -5,9 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Jiko Koa | Modern Eco-Friendly Charcoal Stoves</title>
-<meta name="description" content="Jiko Koa modern charcoal stoves. Fuel efficient, durable and eco-friendly. Prices from KSh 3,500. Free delivery within Nairobi.">
+
+<meta name="description"
+content="Shop Jiko Koa modern charcoal stoves. Fuel efficient, durable and eco-friendly. Prices from KSh 3,500. Nairobi delivery available.">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -24,7 +27,8 @@ body{
     color:#123c27;
 }
 
-/* TOP BAR */
+/* ================= TOP BAR ================= */
+
 .topbar{
     background:#064b2b;
     color:white;
@@ -39,7 +43,8 @@ body{
     margin:0 8px;
 }
 
-/* NAVIGATION */
+/* ================= NAVIGATION ================= */
+
 nav{
     background:#fff;
     height:84px;
@@ -82,7 +87,7 @@ nav{
 
 .navlinks{
     display:flex;
-    gap:30px;
+    gap:28px;
     align-items:center;
 }
 
@@ -123,7 +128,8 @@ nav{
     justify-content:center;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero{
     max-width:1400px;
     margin:28px auto;
@@ -131,9 +137,16 @@ nav{
     border-radius:25px;
     overflow:hidden;
     position:relative;
+
     background:
-        linear-gradient(90deg,rgba(247,248,232,.98) 0%,rgba(247,248,232,.92) 42%,rgba(247,248,232,.15) 72%),
-        url("hero.jpg") center/cover no-repeat;
+    linear-gradient(
+        90deg,
+        rgba(247,248,232,.98) 0%,
+        rgba(247,248,232,.92) 42%,
+        rgba(247,248,232,.15) 72%
+    ),
+    url("hero.jpg") center/cover no-repeat;
+
     display:flex;
     align-items:center;
 }
@@ -237,7 +250,8 @@ nav{
     font-size:26px;
 }
 
-/* BENEFITS */
+/* ================= BENEFITS ================= */
+
 .benefits{
     max-width:1400px;
     margin:0 auto 30px;
@@ -281,7 +295,8 @@ nav{
     color:#677166;
 }
 
-/* SHOP */
+/* ================= SHOP ================= */
+
 .shop-section{
     max-width:1400px;
     margin:45px auto;
@@ -375,7 +390,8 @@ nav{
     color:white;
 }
 
-/* CART */
+/* ================= CART ================= */
+
 .cart{
     background:white;
     border-radius:20px;
@@ -456,11 +472,12 @@ nav{
 }
 
 .remove{
-    border:none;
-    background:none;
-    color:#c33;
+    border:none !important;
+    background:none !important;
+    color:#c33 !important;
     cursor:pointer;
     font-size:12px;
+    width:auto !important;
 }
 
 .cart-total{
@@ -494,7 +511,176 @@ nav{
     color:#69736b;
 }
 
-/* ABOUT STRIP */
+/* ================= MPESA ================= */
+
+.mpesa-section{
+    max-width:1400px;
+    margin:45px auto;
+    padding:0 20px;
+}
+
+.mpesa-box{
+    background:linear-gradient(135deg,#eaf5e2,#f8f9ed);
+    border:1px solid #d5dfc9;
+    border-radius:22px;
+    padding:35px;
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+}
+
+.mpesa-icon{
+    width:70px;
+    height:70px;
+    min-width:70px;
+    border-radius:18px;
+    background:#08763c;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+}
+
+.mpesa-content{
+    width:100%;
+}
+
+.mpesa-label{
+    color:#08763c;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.mpesa-content h2{
+    font-size:30px;
+    margin:6px 0;
+    color:#064b2b;
+}
+
+.mpesa-content > p{
+    color:#5d685f;
+    margin-bottom:20px;
+}
+
+.mpesa-number{
+    background:white;
+    border:1px solid #d7ddd0;
+    border-radius:12px;
+    padding:15px 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:550px;
+    margin-bottom:22px;
+}
+
+.mpesa-number small{
+    display:block;
+    color:#737b72;
+    margin-bottom:4px;
+}
+
+.mpesa-number strong{
+    font-size:22px;
+    color:#08763c;
+}
+
+.mpesa-number button{
+    background:#08763c;
+    color:white;
+    border:none;
+    padding:11px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.mpesa-steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.mpesa-steps div{
+    display:flex;
+    gap:9px;
+    align-items:center;
+}
+
+.mpesa-steps span{
+    width:30px;
+    height:30px;
+    min-width:30px;
+    border-radius:50%;
+    background:#dcebd2;
+    color:#08763c;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.mpesa-steps p{
+    font-size:13px;
+    color:#4f5b52;
+}
+
+.mpesa-whatsapp{
+    display:inline-block;
+    background:#08763c;
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    border-radius:9px;
+    font-weight:bold;
+}
+
+.mpesa-whatsapp:hover{
+    background:#045a2c;
+}
+
+/* ================= DELIVERY INFO ================= */
+
+.info-section{
+    max-width:1400px;
+    margin:45px auto;
+    padding:0 20px;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.info-card{
+    background:white;
+    border:1px solid #e0e3d7;
+    border-radius:18px;
+    padding:25px;
+}
+
+.info-card .icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.info-card h3{
+    color:#08482a;
+    margin-bottom:8px;
+}
+
+.info-card p{
+    color:#657066;
+    line-height:1.6;
+    font-size:14px;
+}
+
+/* ================= ECO STRIP ================= */
+
 .eco-strip{
     max-width:1400px;
     margin:40px auto;
@@ -510,7 +696,8 @@ nav{
     margin-top:5px;
 }
 
-/* REVIEWS */
+/* ================= REVIEWS ================= */
+
 .reviews{
     max-width:1400px;
     margin:45px auto;
@@ -522,6 +709,24 @@ nav{
 .review-title{
     font-size:25px;
     margin-bottom:25px;
+}
+
+.rating-summary{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.rating-number{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.stars{
+    color:#f0a800;
+    font-size:19px;
+    margin-bottom:10px;
 }
 
 .review-grid{
@@ -536,12 +741,6 @@ nav{
     border-radius:14px;
 }
 
-.stars{
-    color:#f0a800;
-    font-size:19px;
-    margin-bottom:10px;
-}
-
 .review p{
     color:#505a51;
     line-height:1.5;
@@ -553,7 +752,8 @@ nav{
     font-weight:bold;
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
+
 footer{
     background:#064b2b;
     color:white;
@@ -573,7 +773,8 @@ footer h3{
     margin-bottom:12px;
 }
 
-footer p,footer a{
+footer p,
+footer a{
     color:#d7e5da;
     font-size:14px;
     line-height:1.8;
@@ -584,6 +785,10 @@ footer a{
     display:block;
 }
 
+footer a:hover{
+    color:white;
+}
+
 .copyright{
     border-top:1px solid rgba(255,255,255,.2);
     text-align:center;
@@ -591,7 +796,8 @@ footer a{
     font-size:13px;
 }
 
-/* WHATSAPP */
+/* ================= WHATSAPP ================= */
+
 .whatsapp{
     position:fixed;
     right:20px;
@@ -610,7 +816,8 @@ footer a{
     z-index:2000;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
+
 @media(max-width:1000px){
 
     .navlinks{
@@ -620,9 +827,16 @@ footer a{
     .hero{
         margin:15px;
         min-height:650px;
+
         background:
-            linear-gradient(180deg,rgba(247,248,232,.96) 0%,rgba(247,248,232,.75) 42%,rgba(247,248,232,.05) 75%),
-            url("hero.jpg") center/cover no-repeat;
+        linear-gradient(
+            180deg,
+            rgba(247,248,232,.96) 0%,
+            rgba(247,248,232,.75) 42%,
+            rgba(247,248,232,.05) 75%
+        ),
+        url("hero.jpg") center/cover no-repeat;
+
         align-items:flex-start;
     }
 
@@ -665,6 +879,14 @@ footer a{
         position:relative;
         top:auto;
         order:-1;
+    }
+
+    .mpesa-steps{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .info-grid{
+        grid-template-columns:1fr;
     }
 
     .review-grid{
@@ -772,69 +994,131 @@ footer a{
         padding:25px;
     }
 
+    .mpesa-box{
+        padding:25px;
+        flex-direction:column;
+    }
+
+    .mpesa-number{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .mpesa-number button{
+        width:100%;
+    }
+
+    .mpesa-whatsapp{
+        width:100%;
+        text-align:center;
+    }
+
+    .mpesa-steps{
+        grid-template-columns:1fr;
+    }
+
     .footer-main{
         grid-template-columns:1fr;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<!-- TOP BAR -->
+
+<!-- ================= TOP BAR ================= -->
+
 <div class="topbar">
-    <div>🚚 <span>Free delivery within Nairobi</span></div>
+
+    <div>
+        🚚 <span>Free delivery within Nairobi</span>
+    </div>
+
     <div>
         <span>Eco-friendly</span> •
         <span>Fuel saving</span> •
         <span>Durable</span>
     </div>
-    <div>💬 <span>0731 519 162</span></div>
+
+    <div>
+        💬 <span>0731 519 162</span>
+    </div>
+
 </div>
 
-<!-- NAVIGATION -->
+
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
 
     <div class="logo">
-        <div class="logo-icon">🌱</div>
+
+        <div class="logo-icon">
+            🌱
+        </div>
+
         <div>
             <h1>JIKO KOA</h1>
             <p>Cook Smart. Save More. Live Green.</p>
         </div>
+
     </div>
 
+
     <div class="navlinks">
+
         <a href="#home">Home</a>
         <a href="#shop">Shop</a>
         <a href="#about">About Us</a>
         <a href="#benefits">Benefits</a>
+        <a href="#payment">M-Pesa</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
+
     </div>
 
+
     <button class="cart-btn" onclick="scrollToCart()">
+
         🛒 Cart
-        <span class="cart-count" id="cartCount">0</span>
+
+        <span class="cart-count" id="cartCount">
+            0
+        </span>
+
     </button>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
+
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <div class="badge">🌿 ECO-FRIENDLY</div>
+        <div class="badge">
+            🌿 ECO-FRIENDLY
+        </div>
 
-        <h2>JIKO KOA</h2>
+        <h2>
+            JIKO KOA
+        </h2>
 
-        <h3>MODERN CHARCOAL STOVES</h3>
+        <h3>
+            MODERN CHARCOAL STOVES
+        </h3>
 
         <p>
             High efficiency. Less charcoal. More heat.
             Save money while protecting the environment.
         </p>
+
 
         <div class="features-mini">
 
@@ -856,6 +1140,7 @@ footer a{
 
         </div>
 
+
         <div class="hero-buttons">
 
             <a href="#shop" class="btn btn-green">
@@ -863,359 +1148,986 @@ footer a{
             </a>
 
             <a
-                href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20Jiko."
-                class="btn btn-outline"
-                target="_blank">
+            href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20Jiko."
+            class="btn btn-outline"
+            target="_blank">
+
                 💬 ORDER ON WHATSAPP
+
             </a>
 
         </div>
 
     </div>
 
+
     <div class="price-badge">
-        <small>Prices from</small>
-        <strong>KSh 3,500</strong>
+
+        <small>
+            Prices from
+        </small>
+
+        <strong>
+            KSh 3,500
+        </strong>
+
     </div>
 
 </section>
 
 
-<!-- BENEFITS -->
+<!-- ================= BENEFITS ================= -->
+
 <section class="benefits" id="benefits">
 
     <div class="benefit">
-        <div class="benefit-icon">🌿</div>
+
+        <div class="benefit-icon">
+            🌿
+        </div>
+
         <div>
             <h4>Eco Friendly</h4>
             <p>Better for you, better for the planet.</p>
         </div>
+
     </div>
 
+
     <div class="benefit">
-        <div class="benefit-icon">🔥</div>
+
+        <div class="benefit-icon">
+            🔥
+        </div>
+
         <div>
             <h4>Fuel Efficient</h4>
             <p>Designed to use less charcoal.</p>
         </div>
+
     </div>
 
+
     <div class="benefit">
-        <div class="benefit-icon">🛡️</div>
+
+        <div class="benefit-icon">
+            🛡️
+        </div>
+
         <div>
             <h4>Durable & Safe</h4>
             <p>Strong build for everyday cooking.</p>
         </div>
+
     </div>
 
+
     <div class="benefit">
-        <div class="benefit-icon">🚚</div>
+
+        <div class="benefit-icon">
+            🚚
+        </div>
+
         <div>
             <h4>Free Delivery</h4>
             <p>Free delivery within Nairobi.</p>
         </div>
+
     </div>
 
 </section>
 
 
-<!-- SHOP -->
+<!-- ================= SHOP ================= -->
+
 <section class="shop-section" id="shop">
 
     <div class="section-title">
-        <h2>🌿 Our Jiko Koa Collection</h2>
-        <p>Choose the perfect jiko for your home</p>
+
+        <h2>
+            🌿 Our Jiko Koa Collection
+        </h2>
+
+        <p>
+            Choose the perfect jiko for your home
+        </p>
+
     </div>
+
 
     <div class="shop-layout">
 
+
         <div class="products">
 
+
             <!-- PRODUCT 1 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko1.jpg" alt="Jiko Koa 1">
+
+                    <img
+                    src="jiko1.jpg"
+                    alt="Jiko Koa 1">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 1</h3>
-                    <div class="price">KSh 3,500</div>
-                    <button class="add-cart" onclick="addToCart(1)">
+
+                    <h3>
+                        Jiko Koa 1
+                    </h3>
+
+                    <div class="price">
+                        KSh 3,500
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(1)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 2 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko2.jpg" alt="Jiko Koa 2">
+
+                    <img
+                    src="jiko2.jpg"
+                    alt="Jiko Koa 2">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 2</h3>
-                    <div class="price">KSh 3,800</div>
-                    <button class="add-cart" onclick="addToCart(2)">
+
+                    <h3>
+                        Jiko Koa 2
+                    </h3>
+
+                    <div class="price">
+                        KSh 3,800
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(2)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 3 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko3.jpg" alt="Jiko Koa 3">
+
+                    <img
+                    src="jiko3.jpg"
+                    alt="Jiko Koa 3">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 3</h3>
-                    <div class="price">KSh 4,000</div>
-                    <button class="add-cart" onclick="addToCart(3)">
+
+                    <h3>
+                        Jiko Koa 3
+                    </h3>
+
+                    <div class="price">
+                        KSh 4,000
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(3)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 4 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko4.jpg" alt="Jiko Koa 4">
+
+                    <img
+                    src="jiko4.jpg"
+                    alt="Jiko Koa 4">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 4</h3>
-                    <div class="price">KSh 4,500</div>
-                    <button class="add-cart" onclick="addToCart(4)">
+
+                    <h3>
+                        Jiko Koa 4
+                    </h3>
+
+                    <div class="price">
+                        KSh 4,500
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(4)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 5 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko5.jpg" alt="Jiko Koa 5">
+
+                    <img
+                    src="jiko5.jpg"
+                    alt="Jiko Koa 5">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 5</h3>
-                    <div class="price">KSh 5,000</div>
-                    <button class="add-cart" onclick="addToCart(5)">
+
+                    <h3>
+                        Jiko Koa 5
+                    </h3>
+
+                    <div class="price">
+                        KSh 5,000
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(5)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 6 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko6.jpg" alt="Jiko Koa 6">
+
+                    <img
+                    src="jiko6.jpg"
+                    alt="Jiko Koa 6">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 6</h3>
-                    <div class="price">KSh 5,500</div>
-                    <button class="add-cart" onclick="addToCart(6)">
+
+                    <h3>
+                        Jiko Koa 6
+                    </h3>
+
+                    <div class="price">
+                        KSh 5,500
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(6)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
             <!-- PRODUCT 7 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko7.jpg" alt="Jiko Koa 7">
+
+                    <img
+                    src="jiko7.jpg"
+                    alt="Jiko Koa 7">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 7</h3>
-                    <div class="price">KSh 6,000</div>
-                    <button class="add-cart" onclick="addToCart(7)">
+
+                    <h3>
+                        Jiko Koa 7
+                    </h3>
+
+                    <div class="price">
+                        KSh 6,000
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(7)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
 
+
             <!-- PRODUCT 8 -->
+
             <div class="product">
+
                 <div class="product-image">
-                    <img src="jiko8.jpg" alt="Jiko Koa 8">
+
+                    <img
+                    src="jiko8.jpg"
+                    alt="Jiko Koa 8">
+
                 </div>
+
                 <div class="product-info">
-                    <h3>Jiko Koa 8</h3>
-                    <div class="price">KSh 6,500</div>
-                    <button class="add-cart" onclick="addToCart(8)">
+
+                    <h3>
+                        Jiko Koa 8
+                    </h3>
+
+                    <div class="price">
+                        KSh 6,500
+                    </div>
+
+                    <button
+                    class="add-cart"
+                    onclick="addToCart(8)">
+
                         🛒 Add to cart
+
                     </button>
+
                 </div>
+
             </div>
+
 
         </div>
 
 
-        <!-- CART -->
+        <!-- ================= CART ================= -->
+
         <aside class="cart" id="cart">
 
-            <h2>🛒 Your Cart</h2>
+            <h2>
+                🛒 Your Cart
+            </h2>
 
-            <div class="cart-items" id="cartItems">
+
+            <div
+            class="cart-items"
+            id="cartItems">
 
                 <div class="empty-cart">
-                    <div>🛒</div>
-                    <strong>Your cart is empty</strong>
-                    <p>Add items to get started.</p>
+
+                    <div>
+                        🛒
+                    </div>
+
+                    <strong>
+                        Your cart is empty
+                    </strong>
+
+                    <p>
+                        Add items to get started.
+                    </p>
+
                 </div>
 
             </div>
 
+
             <div class="cart-total">
-                <span>Total</span>
-                <span id="cartTotal">KSh 0</span>
+
+                <span>
+                    Total
+                </span>
+
+                <span id="cartTotal">
+                    KSh 0
+                </span>
+
             </div>
 
-            <button class="checkout" onclick="checkoutWhatsApp()">
+
+            <button
+            class="checkout"
+            onclick="checkoutWhatsApp()">
+
                 💬 ORDER VIA WHATSAPP
+
             </button>
 
+
             <div class="cart-note">
+
                 Secure ordering • Nairobi delivery available
+
             </div>
 
         </aside>
 
+
     </div>
 
 </section>
 
 
-<!-- ECO MESSAGE -->
-<section class="eco-strip" id="about">
+<!-- ================= MPESA ================= -->
+
+<section class="mpesa-section" id="payment">
+
+    <div class="mpesa-box">
+
+        <div class="mpesa-icon">
+            💳
+        </div>
+
+
+        <div class="mpesa-content">
+
+            <span class="mpesa-label">
+                EASY & SECURE PAYMENT
+            </span>
+
+            <h2>
+                Pay with M-Pesa
+            </h2>
+
+            <p>
+                Order your Jiko Koa and pay conveniently using M-Pesa.
+            </p>
+
+
+            <div class="mpesa-number">
+
+                <div>
+
+                    <small>
+                        M-Pesa Number
+                    </small>
+
+                    <strong id="mpesaNumber">
+                        0743 837 816
+                    </strong>
+
+                </div>
+
+
+                <button onclick="copyMpesaNumber()">
+                    📋 Copy Number
+                </button>
+
+            </div>
+
+
+            <div class="mpesa-steps">
+
+
+                <div>
+
+                    <span>1</span>
+
+                    <p>
+                        Open M-Pesa on your phone
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>2</span>
+
+                    <p>
+                        Select the appropriate payment option
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>3</span>
+
+                    <p>
+                        Enter <b>0743 837 816</b>
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <span>4</span>
+
+                    <p>
+                        Confirm the amount and complete payment
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+            href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20have%20made%20my%20M-Pesa%20payment.%20Please%20confirm%20my%20order."
+            target="_blank"
+            class="mpesa-whatsapp">
+
+                💬 I've Paid — Send Order on WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DELIVERY INFORMATION ================= -->
+
+<section class="info-section">
+
+    <div class="section-title">
+
+        <h2>
+            🚚 Shopping With Jiko Koa
+        </h2>
+
+        <p>
+            Simple, convenient and reliable.
+        </p>
+
+    </div>
+
+
+    <div class="info-grid">
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                🚚
+            </div>
+
+            <h3>
+                Nairobi Delivery
+            </h3>
+
+            <p>
+                We offer free delivery within Nairobi.
+                Contact us on WhatsApp to arrange delivery
+                after placing your order.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                📦
+            </div>
+
+            <h3>
+                Order Confirmation
+            </h3>
+
+            <p>
+                After selecting your jiko, send your order
+                through WhatsApp. Our team will confirm
+                availability and delivery details.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">
+                🤝
+            </div>
+
+            <h3>
+                Customer Support
+            </h3>
+
+            <p>
+                Need help choosing a jiko? Call or WhatsApp
+                us on 0731 519 162 and we will assist you.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= ECO MESSAGE ================= -->
+
+<section
+class="eco-strip"
+id="about">
 
     <div>
-        <div>🌱 JIKO KOA</div>
-        <h2>Cook smart. Save more. Live green.</h2>
-        <p>Built for modern Kenyan homes.</p>
+
+        <div>
+            🌱 JIKO KOA
+        </div>
+
+        <h2>
+            Cook smart. Save more. Live green.
+        </h2>
+
+        <p>
+            Built for modern Kenyan homes.
+        </p>
+
     </div>
 
-    <div style="font-size:55px;">🍃</div>
+
+    <div style="font-size:55px;">
+        🍃
+    </div>
 
 </section>
 
 
-<!-- REVIEWS -->
-<section class="reviews" id="reviews">
+<!-- ================= REVIEWS ================= -->
 
-    <h2 class="review-title">What Our Customers Say</h2>
+<section
+class="reviews"
+id="reviews">
+
+    <h2 class="review-title">
+        What Our Customers Say
+    </h2>
+
+
+    <div class="rating-summary">
+
+        <div class="rating-number">
+            4.8
+        </div>
+
+        <div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Customer satisfaction
+            </p>
+
+        </div>
+
+    </div>
+
 
     <div class="review-grid">
 
+
         <div class="review">
-            <div class="stars">★★★★★</div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
             <p>
                 Best jiko ever! It saves so much charcoal
                 and is very durable.
             </p>
-            <div class="reviewer">— Mary W.</div>
+
+            <div class="reviewer">
+                — Mary W.
+            </div>
+
         </div>
 
+
         <div class="review">
-            <div class="stars">★★★★★</div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
             <p>
                 High quality and cooks fast.
                 Highly recommend Jiko Koa!
             </p>
-            <div class="reviewer">— Peter K.</div>
+
+            <div class="reviewer">
+                — Peter K.
+            </div>
+
         </div>
 
+
         <div class="review">
-            <div class="stars">★★★★★</div>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
             <p>
                 Great customer service and free
                 delivery was a bonus.
             </p>
-            <div class="reviewer">— Amina N.</div>
+
+            <div class="reviewer">
+                — Amina N.
+            </div>
+
         </div>
+
 
     </div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
+
 <footer id="contact">
 
     <div class="footer-main">
 
+
         <div>
-            <h3>🌱 JIKO KOA</h3>
+
+            <h3>
+                🌱 JIKO KOA
+            </h3>
+
             <p>
                 Modern, efficient and eco-friendly
                 charcoal stoves made for Kenyan homes.
             </p>
+
         </div>
 
-        <div>
-            <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#about">About Us</a>
-            <a href="#reviews">Reviews</a>
-        </div>
 
         <div>
-            <h3>Why Jiko Koa?</h3>
-            <p>✓ Fuel efficient</p>
-            <p>✓ Durable</p>
-            <p>✓ Eco-friendly</p>
-            <p>✓ Nairobi delivery</p>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#shop">
+                Shop
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+            <a href="#reviews">
+                Reviews
+            </a>
+
         </div>
 
+
         <div>
-            <h3>Contact</h3>
-            <p>📞 0731 519 162</p>
-            <p>💬 WhatsApp Available</p>
-            <p>📍 Nairobi, Kenya</p>
+
+            <h3>
+                Why Jiko Koa?
+            </h3>
+
+            <p>
+                ✓ Fuel efficient
+            </p>
+
+            <p>
+                ✓ Durable
+            </p>
+
+            <p>
+                ✓ Eco-friendly
+            </p>
+
+            <p>
+                ✓ Nairobi delivery
+            </p>
+
         </div>
+
+
+        <div>
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                📞 0731 519 162
+            </p>
+
+            <p>
+                💬 WhatsApp Available
+            </p>
+
+            <p>
+                📍 Nairobi, Kenya
+            </p>
+
+            <p>
+                💳 M-Pesa: 0743 837 816
+            </p>
+
+        </div>
+
 
     </div>
 
+
     <div class="copyright">
+
         © 2026 Jiko Koa. All Rights Reserved.
+
     </div>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
+<!-- ================= FLOATING WHATSAPP ================= -->
+
 <a
-    class="whatsapp"
-    href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20jiko."
-    target="_blank"
-    title="Chat with Jiko Koa on WhatsApp">
+class="whatsapp"
+href="https://wa.me/254731519162?text=Hello%20Jiko%20Koa,%20I%20would%20like%20to%20order%20a%20jiko."
+target="_blank"
+title="Chat with Jiko Koa on WhatsApp">
+
     💬
+
 </a>
 
 
+<!-- ================= JAVASCRIPT ================= -->
+
 <script>
+
 
 const products = {
 
-    1:{name:"Jiko Koa 1",price:3500,image:"jiko1.jpg"},
-    2:{name:"Jiko Koa 2",price:3800,image:"jiko2.jpg"},
-    3:{name:"Jiko Koa 3",price:4000,image:"jiko3.jpg"},
-    4:{name:"Jiko Koa 4",price:4500,image:"jiko4.jpg"},
-    5:{name:"Jiko Koa 5",price:5000,image:"jiko5.jpg"},
-    6:{name:"Jiko Koa 6",price:5500,image:"jiko6.jpg"},
-    7:{name:"Jiko Koa 7",price:6000,image:"jiko7.jpg"},
-    8:{name:"Jiko Koa 8",price:6500,image:"jiko8.jpg"}
+    1:{
+        name:"Jiko Koa 1",
+        price:3500,
+        image:"jiko1.jpg"
+    },
+
+    2:{
+        name:"Jiko Koa 2",
+        price:3800,
+        image:"jiko2.jpg"
+    },
+
+    3:{
+        name:"Jiko Koa 3",
+        price:4000,
+        image:"jiko3.jpg"
+    },
+
+    4:{
+        name:"Jiko Koa 4",
+        price:4500,
+        image:"jiko4.jpg"
+    },
+
+    5:{
+        name:"Jiko Koa 5",
+        price:5000,
+        image:"jiko5.jpg"
+    },
+
+    6:{
+        name:"Jiko Koa 6",
+        price:5500,
+        image:"jiko6.jpg"
+    },
+
+    7:{
+        name:"Jiko Koa 7",
+        price:6000,
+        image:"jiko7.jpg"
+    },
+
+    8:{
+        name:"Jiko Koa 8",
+        price:6500,
+        image:"jiko8.jpg"
+    }
 
 };
+
 
 let cart = {};
 
 
+/* ================= ADD TO CART ================= */
+
 function addToCart(id){
 
     if(cart[id]){
+
         cart[id].quantity++;
+
     }else{
+
         cart[id] = {
             ...products[id],
             quantity:1
         };
+
     }
 
     updateCart();
@@ -1224,167 +2136,290 @@ function addToCart(id){
         behavior:"smooth",
         block:"center"
     });
+
 }
 
 
+/* ================= QUANTITY ================= */
+
 function changeQuantity(id,change){
 
-    if(!cart[id]) return;
+    if(!cart[id]){
+        return;
+    }
 
     cart[id].quantity += change;
 
     if(cart[id].quantity <= 0){
+
         delete cart[id];
+
     }
 
     updateCart();
+
 }
 
+
+/* ================= REMOVE ================= */
 
 function removeFromCart(id){
 
     delete cart[id];
 
     updateCart();
+
 }
 
 
+/* ================= UPDATE CART ================= */
+
 function updateCart(){
 
-    const container = document.getElementById("cartItems");
+    const container =
+        document.getElementById("cartItems");
 
-    const ids = Object.keys(cart);
+    const ids =
+        Object.keys(cart);
 
     let totalItems = 0;
+
     let total = 0;
+
 
     if(ids.length === 0){
 
         container.innerHTML = `
-            <div class="empty-cart">
-                <div>🛒</div>
-                <strong>Your cart is empty</strong>
-                <p>Add items to get started.</p>
-            </div>
+
+        <div class="empty-cart">
+
+            <div>🛒</div>
+
+            <strong>
+                Your cart is empty
+            </strong>
+
+            <p>
+                Add items to get started.
+            </p>
+
+        </div>
+
         `;
 
     }else{
+
 
         container.innerHTML = ids.map(id => {
 
             const item = cart[id];
 
+            const subtotal =
+                item.price * item.quantity;
+
             totalItems += item.quantity;
-            total += item.price * item.quantity;
+
+            total += subtotal;
+
 
             return `
-                <div class="cart-item">
 
-                    <img src="${item.image}" alt="${item.name}">
+            <div class="cart-item">
 
-                    <div class="cart-item-info">
+                <img
+                src="${item.image}"
+                alt="${item.name}">
 
-                        <h4>${item.name}</h4>
+                <div class="cart-item-info">
 
-                        <p>
-                            KSh ${(item.price * item.quantity).toLocaleString()}
-                        </p>
+                    <h4>
+                        ${item.name}
+                    </h4>
 
-                        <div class="quantity">
+                    <p>
+                        KSh ${subtotal.toLocaleString()}
+                    </p>
 
-                            <button onclick="changeQuantity(${id},-1)">
-                                −
-                            </button>
 
-                            <span>${item.quantity}</span>
+                    <div class="quantity">
 
-                            <button onclick="changeQuantity(${id},1)">
-                                +
-                            </button>
+                        <button
+                        onclick="changeQuantity(${id},-1)">
+                            −
+                        </button>
 
-                            <button class="remove"
-                                onclick="removeFromCart(${id})">
-                                Remove
-                            </button>
+                        <span>
+                            ${item.quantity}
+                        </span>
 
-                        </div>
+                        <button
+                        onclick="changeQuantity(${id},1)">
+                            +
+                        </button>
+
+                        <button
+                        class="remove"
+                        onclick="removeFromCart(${id})">
+
+                            Remove
+
+                        </button>
 
                     </div>
 
                 </div>
+
+            </div>
+
             `;
 
         }).join("");
 
     }
 
-    document.getElementById("cartCount").textContent = totalItems;
 
-    document.getElementById("cartTotal").textContent =
+    document.getElementById("cartCount")
+    .textContent = totalItems;
+
+
+    document.getElementById("cartTotal")
+    .textContent =
         "KSh " + total.toLocaleString();
 
 }
 
 
+/* ================= WHATSAPP CHECKOUT ================= */
+
 function checkoutWhatsApp(){
 
-    const ids = Object.keys(cart);
+    const ids =
+        Object.keys(cart);
+
 
     if(ids.length === 0){
 
-        alert("Your cart is empty. Please add a jiko first.");
+        alert(
+            "Your cart is empty. Please add a jiko first."
+        );
 
         return;
+
     }
 
-    let message = "Hello Jiko Koa! I would like to order:%0A%0A";
+
+    let message =
+        "Hello Jiko Koa! I would like to order:%0A%0A";
+
 
     let total = 0;
+
 
     ids.forEach(id => {
 
         const item = cart[id];
 
-        const subtotal = item.price * item.quantity;
+        const subtotal =
+            item.price * item.quantity;
 
         total += subtotal;
 
+
         message +=
-            "• " + item.name +
-            " x" + item.quantity +
+            "• " +
+            item.name +
+            " x" +
+            item.quantity +
             " - KSh " +
             subtotal.toLocaleString() +
             "%0A";
 
     });
 
+
     message +=
         "%0A*Total: KSh " +
         total.toLocaleString() +
         "*";
 
+
     message +=
-        "%0A%0APlease let me know about delivery. Thank you!";
+        "%0A%0A*M-Pesa payment number: 0743 837 816*";
+
+
+    message +=
+        "%0A%0APlease confirm availability and delivery details.";
+
 
     window.open(
-        "https://wa.me/254731519162?text=" + message,
+        "https://wa.me/254731519162?text=" +
+        message,
         "_blank"
     );
 
 }
 
 
+/* ================= COPY MPESA ================= */
+
+function copyMpesaNumber(){
+
+    const number =
+        "0743837816";
+
+
+    if(
+        navigator.clipboard &&
+        navigator.clipboard.writeText
+    ){
+
+        navigator.clipboard
+        .writeText(number)
+        .then(function(){
+
+            alert(
+                "M-Pesa number copied: 0743 837 816"
+            );
+
+        })
+        .catch(function(){
+
+            alert(
+                "M-Pesa Number: 0743 837 816"
+            );
+
+        });
+
+    }else{
+
+        alert(
+            "M-Pesa Number: 0743 837 816"
+        );
+
+    }
+
+}
+
+
+/* ================= SCROLL TO CART ================= */
+
 function scrollToCart(){
 
-    document.getElementById("cart").scrollIntoView({
+    document.getElementById("cart")
+    .scrollIntoView({
+
         behavior:"smooth",
         block:"center"
+
     });
 
 }
 
 
+/* ================= START CART ================= */
+
 updateCart();
+
 
 </script>
 
