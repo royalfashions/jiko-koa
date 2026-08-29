@@ -12,6 +12,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+/* ===== COMPACT CART DRAWER ===== */
+#cart{
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:min(420px,92vw);
+  height:100vh;
+  margin:0;
+  z-index:9999;
+  overflow-y:auto;
+  border-radius:0;
+  transition:right .35s ease;
+  box-shadow:-10px 0 30px rgba(0,0,0,.35);
+}
+
+#cart.cart-open{
+  right:0;
+}
+
+#cart h2{
+  position:sticky;
+  top:0;
+  z-index:2;
+  padding:20px 0;
+}
+
+#cart .cart-items{
+  max-height:none;
+}
+
+@media(max-width:600px){
+  #cart{
+    width:94vw;
+  }
+
+  #cart .checkout{
+    position:sticky;
+    bottom:10px;
+  }
+}
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
