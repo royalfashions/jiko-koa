@@ -55,7 +55,59 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const cart = document.getElementById("cart");
+
+  if (!cart) return;
+
+  /* Find the main Cart button */
+  const cartButton = Array.from(document.querySelectorAll("button")).find(btn =>
+    /cart/i.test(btn.textContent) &&
+    !btn.classList.contains("add-cart") &&
+    !btn.classList.contains("checkout")
+  );
+
+  /* Add close button */
+  const closeButton = document.createElement("button");
+  closeButton.innerHTML = "✕";
+  closeButton.setAttribute("aria-label", "Close cart");
+
+  closeButton.style.cssText = `
+    position:absolute;
+    top:18px;
+    right:18px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.08);
+    color:inherit;
+    font-size:20px;
+    cursor:pointer;
+    z-index:10;
+  `;
+
+  cart.style.position = "fixed";
+  cart.style.zIndex = "9999";
+
+  cart.insertBefore(closeButton, cart.firstChild);
+
+  /* Open cart */
+  if (cartButton) {
+    cartButton.addEventListener("click", function () {
+      cart.classList.add("cart-open");
+    });
+  }
+
+  /* Close cart */
+  closeButton.addEventListener("click", function () {
+    cart.classList.remove("cart-open");
+  });
+
+});
+</script>
 body{
 font-family:'Poppins',sans-serif;
 background:
