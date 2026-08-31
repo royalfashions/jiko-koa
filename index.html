@@ -4,2033 +4,1720 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Royal Shop Collections | Fashion, Electronics & Home Essentials</title>
+<title>Jiko Koa | Renewable Energy & Clean Cooking Solutions Kenya</title>
 
-<meta name="description" content="Royal Shop Collections - Shop fashion, shoes, electronics, beauty, kitchen, home and lifestyle products in Kenya.">
-<meta name="keywords" content="Royal Shop Collections, Kenya online shop, shoes, fashion, electronics, home appliances, kitchen, beauty">
-<meta name="theme-color" content="#111111">
+<meta name="description" content="Jiko Koa provides modern, energy-efficient charcoal cooking stoves and clean cooking solutions in Kenya. Quality products, affordable prices and reliable delivery.">
+<meta name="keywords" content="Jiko Koa, renewable energy Kenya, clean cooking Kenya, energy efficient jiko, charcoal stove Kenya, modern jiko, clean energy, Nairobi jiko">
+<meta name="theme-color" content="#08763c">
+
+<meta property="og:title" content="Jiko Koa | Renewable Energy & Clean Cooking Solutions">
+<meta property="og:description" content="Better cooking. Smarter energy. A cleaner future with Jiko Koa.">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --black:#111111;
-  --dark:#181818;
-  --cream:#faf9f6;
-  --light:#f4f4f2;
-  --white:#ffffff;
-  --gray:#777;
-  --border:#e5e5e5;
-  --accent:#b28a4a;
-  --danger:#d93025;
+    --green:#08763c;
+    --dark:#063d25;
+    --deep:#03291a;
+    --cream:#fff8e8;
+    --gold:#d8a83e;
+    --light:#f5f1df;
+    --white:#ffffff;
+    --text:#183528;
+    --shadow:0 12px 35px rgba(0,0,0,.12);
 }
 
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-  font-family:'Inter',sans-serif;
-  background:var(--cream);
-  color:var(--black);
+    font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(circle at top right,rgba(216,168,62,.13),transparent 30%),
+        linear-gradient(135deg,#fffdf4,#eef7ee);
+    color:var(--text);
+    line-height:1.6;
 }
 
-button,
-input,
-select{
-  font-family:inherit;
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
 }
 
 button{
-  cursor:pointer;
+    font-family:inherit;
 }
 
-/* =========================
-   TOP BAR
-========================= */
-
-.topbar{
-  background:#111;
-  color:white;
-  text-align:center;
-  padding:9px;
-  font-size:12px;
-  letter-spacing:.5px;
-}
-
-/* =========================
-   HEADER
-========================= */
-
+/* HEADER */
 header{
-  background:white;
-  border-bottom:1px solid var(--border);
-  position:sticky;
-  top:0;
-  z-index:1000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(3,41,26,.96);
+    backdrop-filter:blur(12px);
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
-.header-main{
-  max-width:1400px;
-  margin:auto;
-  height:76px;
-  display:flex;
-  align-items:center;
-  gap:28px;
-  padding:0 24px;
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
 .logo{
-  font-size:24px;
-  font-weight:800;
-  letter-spacing:-1px;
-  white-space:nowrap;
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:.5px;
 }
 
 .logo span{
-  color:var(--accent);
+    color:var(--gold);
 }
 
-.search{
-  flex:1;
-  max-width:600px;
-  position:relative;
+.logo small{
+    display:block;
+    font-size:8px;
+    letter-spacing:2px;
+    color:#dcebdd;
+    font-weight:500;
 }
 
-.search input{
-  width:100%;
-  height:44px;
-  border:1px solid #ddd;
-  border-radius:2px;
-  padding:0 48px 0 16px;
-  outline:none;
-  background:#fafafa;
+.nav-links{
+    display:flex;
+    gap:22px;
+    align-items:center;
 }
 
-.search input:focus{
-  border-color:#999;
+.nav-links a{
+    font-size:14px;
+    color:#fff;
+    transition:.3s;
 }
 
-.search button{
-  position:absolute;
-  right:0;
-  top:0;
-  width:46px;
-  height:44px;
-  border:0;
-  background:var(--black);
-  color:white;
+.nav-links a:hover{
+    color:var(--gold);
 }
 
-.header-actions{
-  margin-left:auto;
-  display:flex;
-  gap:10px;
-  align-items:center;
-}
-
-.icon-btn{
-  background:white;
-  border:1px solid #ddd;
-  height:42px;
-  min-width:42px;
-  padding:0 12px;
-  border-radius:2px;
-  position:relative;
+.cart-button{
+    border:0;
+    background:var(--gold);
+    color:#102719;
+    padding:10px 15px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:700;
 }
 
 .cart-count{
-  position:absolute;
-  top:-7px;
-  right:-7px;
-  background:var(--accent);
-  color:white;
-  width:20px;
-  height:20px;
-  border-radius:50%;
-  font-size:11px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+    background:#fff;
+    border-radius:50%;
+    padding:2px 7px;
+    margin-left:4px;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-
-.nav{
-  border-top:1px solid #f0f0f0;
-  background:white;
-}
-
-.nav-inner{
-  max-width:1400px;
-  margin:auto;
-  padding:0 24px;
-  display:flex;
-  overflow-x:auto;
-}
-
-.nav a{
-  color:#222;
-  text-decoration:none;
-  padding:14px 20px;
-  font-size:13px;
-  font-weight:600;
-  white-space:nowrap;
-}
-
-.nav a:hover{
-  background:#f5f5f5;
-}
-
-/* =========================
-   HERO
-========================= */
-
+/* HERO */
 .hero{
-  max-width:1400px;
-  margin:24px auto 0;
-  padding:0 24px;
-}
-
-.hero-box{
-  min-height:390px;
-  background:
-    linear-gradient(90deg,rgba(0,0,0,.84),rgba(0,0,0,.3)),
-    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1800&q=85")
-    center/cover;
-  display:flex;
-  align-items:center;
-  padding:55px;
-  color:white;
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+        linear-gradient(90deg,rgba(3,41,26,.95),rgba(3,41,26,.68),rgba(3,41,26,.2)),
+        url('hero.jpg') center/cover no-repeat;
+    color:white;
 }
 
 .hero-content{
-  max-width:650px;
-}
-
-.hero-content small{
-  letter-spacing:3px;
-  text-transform:uppercase;
-  font-size:12px;
-}
-
-.hero-content h1{
-  font-size:clamp(38px,6vw,70px);
-  line-height:.98;
-  margin:16px 0;
-  letter-spacing:-3px;
-}
-
-.hero-content p{
-  max-width:520px;
-  line-height:1.7;
-  color:#eee;
-}
-
-.hero-buttons{
-  margin-top:28px;
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.btn{
-  border:0;
-  padding:14px 23px;
-  font-weight:700;
-  text-decoration:none;
-  display:inline-block;
-}
-
-.btn-dark{
-  background:white;
-  color:#111;
-}
-
-.btn-outline{
-  border:1px solid white;
-  color:white;
-  background:transparent;
-}
-
-/* =========================
-   CATEGORY STRIP
-========================= */
-
-.section{
-  max-width:1400px;
-  margin:55px auto;
-  padding:0 24px;
-}
-
-.section-heading{
-  display:flex;
-  align-items:end;
-  justify-content:space-between;
-  margin-bottom:22px;
-}
-
-.section-heading h2{
-  font-size:26px;
-}
-
-.section-heading p{
-  color:var(--gray);
-  font-size:13px;
-}
-
-.categories{
-  display:grid;
-  grid-template-columns:repeat(8,1fr);
-  gap:10px;
-}
-
-.category{
-  background:white;
-  border:1px solid var(--border);
-  padding:24px 10px;
-  text-align:center;
-  transition:.2s;
-  cursor:pointer;
-}
-
-.category:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 25px rgba(0,0,0,.07);
-}
-
-.category .emoji{
-  font-size:28px;
-  margin-bottom:10px;
-}
-
-.category strong{
-  font-size:12px;
-}
-
-/* =========================
-   SHOP TOOLBAR
-========================= */
-
-.shop-layout{
-  display:grid;
-  grid-template-columns:230px 1fr;
-  gap:30px;
-}
-
-.filters{
-  background:white;
-  border:1px solid var(--border);
-  padding:20px;
-  height:max-content;
-  position:sticky;
-  top:150px;
-}
-
-.filters h3{
-  font-size:15px;
-  margin-bottom:20px;
-}
-
-.filter-group{
-  border-top:1px solid var(--border);
-  padding:18px 0;
-}
-
-.filter-group:first-of-type{
-  border-top:0;
-}
-
-.filter-group h4{
-  font-size:12px;
-  text-transform:uppercase;
-  margin-bottom:12px;
-}
-
-.filter-group label{
-  display:block;
-  font-size:13px;
-  margin:10px 0;
-  color:#555;
-}
-
-.filter-group input[type="checkbox"]{
-  margin-right:8px;
-}
-
-.price-inputs{
-  display:flex;
-  gap:7px;
-}
-
-.price-inputs input{
-  width:50%;
-  padding:9px;
-  border:1px solid #ddd;
-}
-
-.shop-main{
-  min-width:0;
-}
-
-.toolbar{
-  background:white;
-  border:1px solid var(--border);
-  padding:15px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:20px;
-  gap:12px;
-}
-
-.toolbar-left{
-  font-size:13px;
-  color:#666;
-}
-
-.toolbar-right{
-  display:flex;
-  gap:10px;
-}
-
-.toolbar select{
-  border:1px solid #ddd;
-  background:white;
-  padding:9px 12px;
-}
-
-/* =========================
-   PRODUCT GRID
-========================= */
-
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.product{
-  background:white;
-  border:1px solid var(--border);
-  overflow:hidden;
-  position:relative;
-  transition:.25s;
-}
-
-.product:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
-}
-
-.product-image{
-  height:250px;
-  background:#f3f3f3;
-  position:relative;
-  overflow:hidden;
-}
-
-.product-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  transition:.4s;
-}
-
-.product:hover img{
-  transform:scale(1.04);
+    max-width:1200px;
+    width:100%;
+    margin:auto;
+    padding:80px 20px;
 }
 
 .badge{
-  position:absolute;
-  left:10px;
-  top:10px;
-  background:#111;
-  color:white;
-  padding:6px 9px;
-  font-size:10px;
-  font-weight:700;
-  z-index:2;
+    display:inline-block;
+    padding:8px 15px;
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+    font-size:13px;
+    margin-bottom:20px;
 }
 
-.badge.sale{
-  background:var(--danger);
+.hero h1{
+    max-width:720px;
+    font-size:clamp(38px,6vw,70px);
+    line-height:1.05;
+    margin-bottom:22px;
 }
 
-.wishlist{
-  position:absolute;
-  right:10px;
-  top:10px;
-  width:32px;
-  height:32px;
-  background:white;
-  border:0;
-  border-radius:50%;
-  z-index:2;
+.hero h1 span{
+    color:var(--gold);
+}
+
+.hero p{
+    max-width:650px;
+    font-size:18px;
+    color:#edf5ed;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 23px;
+    border-radius:35px;
+    font-weight:700;
+    border:0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#122619;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(216,168,62,.35);
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+    background:transparent;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--dark);
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+}
+
+.section-heading span{
+    color:var(--green);
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.section-heading h2{
+    font-size:clamp(28px,4vw,43px);
+    color:var(--dark);
+    margin:8px 0 12px;
+}
+
+.section-heading p{
+    color:#617066;
+}
+
+/* STATS */
+.stats{
+    background:var(--green);
+    color:white;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:20px;
+}
+
+.stat strong{
+    display:block;
+    font-size:30px;
+    color:var(--gold);
+}
+
+.stat span{
+    font-size:13px;
+}
+
+/* ABOUT */
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image{
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.about-image img{
+    width:100%;
+    height:460px;
+    object-fit:cover;
+}
+
+.about-text h2{
+    font-size:40px;
+    color:var(--dark);
+    line-height:1.15;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:18px;
+    color:#5b6d62;
+}
+
+.check-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+.check-list li{
+    margin:12px 0;
+    font-weight:600;
+}
+
+.check-list li::before{
+    content:"✓";
+    color:var(--green);
+    font-weight:900;
+    margin-right:10px;
+}
+
+/* SOLUTIONS */
+.solutions{
+    background:#f0f7ed;
+}
+
+.solution-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.solution-card{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    border-top:4px solid var(--green);
+}
+
+.solution-card:hover{
+    transform:translateY(-8px);
+}
+
+.solution-icon{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.solution-card h3{
+    color:var(--dark);
+    margin-bottom:10px;
+}
+
+/* PRODUCTS */
+.products{
+    background:var(--cream);
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.product-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-6px);
+}
+
+.product-image{
+    height:220px;
+    background:#e9e9df;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover img{
+    transform:scale(1.05);
 }
 
 .product-info{
-  padding:16px;
+    padding:18px;
 }
 
-.product-category{
-  font-size:10px;
-  text-transform:uppercase;
-  color:#999;
-  letter-spacing:1px;
+.product-info h3{
+    color:var(--dark);
+    font-size:17px;
 }
 
-.product-name{
-  font-size:14px;
-  font-weight:600;
-  margin:7px 0;
-  min-height:38px;
-}
-
-.rating{
-  font-size:12px;
-  margin-bottom:10px;
-}
-
-.rating span{
-  color:#e0a72e;
+.product-description{
+    color:#718076;
+    font-size:12px;
+    margin:7px 0 12px;
 }
 
 .price{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  margin-bottom:14px;
-}
-
-.current{
-  font-weight:800;
-}
-
-.old{
-  text-decoration:line-through;
-  color:#999;
-  font-size:12px;
+    color:var(--green);
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:13px;
 }
 
 .product-actions{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:7px;
+    display:flex;
+    gap:8px;
 }
 
-.buy-btn,
-.add-btn{
-  border:1px solid #111;
-  padding:10px 6px;
-  font-size:11px;
-  font-weight:700;
+.add-cart{
+    flex:1;
+    background:var(--green);
+    color:white;
+    border:0;
+    padding:11px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
 }
 
-.buy-btn{
-  background:#111;
-  color:white;
+.order-now{
+    background:#e9f3e9;
+    color:var(--green);
+    border:0;
+    padding:11px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:700;
 }
 
-.add-btn{
-  background:white;
-  color:#111;
+/* WHY US */
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 
-/* =========================
-   PROMO BANNER
-========================= */
-
-.promo{
-  background:#111;
-  color:white;
-  padding:45px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
+.why-card{
+    text-align:center;
+    padding:25px 15px;
+    border-radius:20px;
+    background:white;
+    box-shadow:var(--shadow);
 }
 
-.promo h2{
-  font-size:30px;
-  margin-bottom:8px;
+.why-card .icon{
+    font-size:35px;
+    margin-bottom:10px;
 }
 
-.promo p{
-  color:#ccc;
-  font-size:13px;
+.why-card h3{
+    font-size:16px;
+    color:var(--dark);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* PROCESS */
+.process{
+    background:var(--dark);
+    color:white;
+}
 
+.process .section-heading h2{
+    color:white;
+}
+
+.process .section-heading p{
+    color:#c9d8cd;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.step{
+    text-align:center;
+    position:relative;
+}
+
+.step-number{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 15px;
+    background:var(--gold);
+    color:var(--dark);
+    font-weight:800;
+}
+
+.step h3{
+    margin-bottom:8px;
+}
+
+/* PAYMENT */
+.payment{
+    background:#f3f8ef;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.payment-card{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+
+.payment-card h3{
+    color:var(--dark);
+    margin-bottom:15px;
+}
+
+.payment-card strong{
+    color:var(--green);
+}
+
+.payment-note{
+    margin-top:15px;
+    font-size:13px;
+    color:#68766e;
+}
+
+/* DELIVERY */
+.delivery{
+    background:linear-gradient(135deg,var(--green),var(--dark));
+    color:white;
+}
+
+.delivery-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.delivery h2{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.delivery p{
+    color:#dce9de;
+}
+
+.delivery-box{
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.2);
+    padding:30px;
+    border-radius:22px;
+}
+
+.delivery-box h3{
+    color:var(--gold);
+    margin-bottom:10px;
+}
+
+/* FAQ */
+.faq-list{
+    max-width:850px;
+    margin:auto;
+}
+
+details{
+    background:white;
+    margin-bottom:12px;
+    border-radius:12px;
+    padding:18px 20px;
+    box-shadow:0 5px 18px rgba(0,0,0,.07);
+}
+
+summary{
+    cursor:pointer;
+    font-weight:700;
+    color:var(--dark);
+}
+
+details p{
+    margin-top:12px;
+    color:#68766e;
+}
+
+/* CONTACT */
+.contact{
+    background:var(--cream);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+
+.contact-item{
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+}
+
+.contact-item:last-child{
+    border:0;
+}
+
+.contact-item strong{
+    display:block;
+    color:var(--dark);
+}
+
+.contact-item a{
+    color:var(--green);
+    font-weight:600;
+}
+
+.whatsapp-large{
+    display:inline-block;
+    margin-top:20px;
+    background:#128c48;
+    color:white;
+    padding:14px 22px;
+    border-radius:30px;
+    font-weight:700;
+}
+
+/* FOOTER */
 footer{
-  background:#111;
-  color:white;
-  margin-top:70px;
+    background:#021f13;
+    color:white;
+    padding:50px 20px 25px;
 }
 
-.footer-inner{
-  max-width:1400px;
-  margin:auto;
-  padding:55px 24px;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr 1.4fr;
-  gap:45px;
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
 }
 
-.footer-brand h2{
-  font-size:24px;
-  margin-bottom:14px;
+footer h3{
+    color:var(--gold);
+    margin-bottom:12px;
 }
 
-.footer-brand h2 span{
-  color:var(--accent);
+footer p,footer a{
+    color:#b8c8bd;
+    font-size:13px;
 }
 
-.footer p{
-  color:#aaa;
-  font-size:13px;
-  line-height:1.8;
+.footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
 }
 
-.footer h3{
-  font-size:13px;
-  margin-bottom:18px;
+.copyright{
+    max-width:1200px;
+    margin:35px auto 0;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.12);
+    text-align:center;
+    color:#8da196;
+    font-size:12px;
 }
 
-.footer a{
-  color:#aaa;
-  text-decoration:none;
-  display:block;
-  font-size:13px;
-  margin:10px 0;
+/* FLOATING WHATSAPP */
+.whatsapp-float{
+    position:fixed;
+    right:18px;
+    bottom:20px;
+    z-index:999;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#159447;
+    color:white;
+    font-size:27px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
-.footer a:hover{
-  color:white;
-}
-
-.footer-bottom{
-  border-top:1px solid #292929;
-  text-align:center;
-  padding:18px;
-  color:#888;
-  font-size:11px;
-}
-
-/* =========================
-   CART DRAWER
-========================= */
-
+/* CART */
 .cart-overlay{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.45);
-  z-index:2000;
-  display:none;
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    z-index:2000;
 }
 
 .cart-overlay.active{
-  display:block;
+    display:block;
 }
 
 .cart{
-  position:fixed;
-  right:0;
-  top:0;
-  height:100vh;
-  width:min(420px,94vw);
-  background:white;
-  z-index:2100;
-  transform:translateX(100%);
-  transition:.3s;
-  display:flex;
-  flex-direction:column;
-}
-
-.cart.active{
-  transform:translateX(0);
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:min(420px,100%);
+    background:#fffdf5;
+    padding:25px;
+    overflow-y:auto;
+    box-shadow:-10px 0 30px rgba(0,0,0,.2);
 }
 
 .cart-header{
-  padding:20px;
-  border-bottom:1px solid var(--border);
-  display:flex;
-  justify-content:space-between;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
 }
 
 .cart-header h2{
-  font-size:18px;
+    color:var(--dark);
 }
 
 .close-cart{
-  background:none;
-  border:0;
-  font-size:24px;
-}
-
-.cart-items{
-  flex:1;
-  overflow-y:auto;
-  padding:15px;
+    border:0;
+    background:#eee;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
 }
 
 .cart-item{
-  display:grid;
-  grid-template-columns:65px 1fr auto;
-  gap:12px;
-  padding:13px 0;
-  border-bottom:1px solid #eee;
-}
-
-.cart-item img{
-  width:65px;
-  height:65px;
-  object-fit:cover;
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:14px 0;
+    border-bottom:1px solid #ddd;
 }
 
 .cart-item h4{
-  font-size:12px;
-  margin-bottom:6px;
+    font-size:14px;
 }
 
-.cart-item p{
-  font-size:12px;
-  font-weight:700;
+.cart-item small{
+    color:var(--green);
 }
 
-.remove{
-  border:0;
-  background:none;
-  color:#999;
-}
-
-.cart-footer{
-  border-top:1px solid var(--border);
-  padding:20px;
+.remove-item{
+    border:0;
+    background:none;
+    color:#b22;
+    cursor:pointer;
 }
 
 .cart-total{
-  display:flex;
-  justify-content:space-between;
-  font-weight:800;
-  margin-bottom:15px;
+    margin-top:25px;
+    padding:18px;
+    background:#edf6ed;
+    border-radius:15px;
+}
+
+.cart-total strong{
+    color:var(--green);
+    font-size:22px;
 }
 
 .checkout{
-  width:100%;
-  border:0;
-  background:#111;
-  color:white;
-  padding:15px;
-  font-weight:800;
-}
-
-/* =========================
-   WHATSAPP
-========================= */
-
-.whatsapp{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  background:#25D366;
-  color:white;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-decoration:none;
-  font-size:25px;
-  z-index:1500;
-  box-shadow:0 8px 25px rgba(0,0,0,.2);
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-.mobile-menu{
-  display:none;
-}
-
-@media(max-width:1100px){
-  .categories{
-    grid-template-columns:repeat(4,1fr);
-  }
-
-  .product-grid{
-    grid-template-columns:repeat(3,1fr);
-  }
-
-  .footer-inner{
-    grid-template-columns:1fr 1fr;
-  }
-}
-
-@media(max-width:800px){
-
-  .header-main{
-    height:auto;
-    min-height:70px;
-    flex-wrap:wrap;
+    width:100%;
+    margin-top:15px;
+    border:0;
+    background:var(--green);
+    color:white;
     padding:14px;
-    gap:10px;
-  }
-
-  .logo{
-    font-size:20px;
-  }
-
-  .header-actions{
-    margin-left:auto;
-  }
-
-  .search{
-    order:3;
-    flex-basis:100%;
-    max-width:none;
-  }
-
-  .nav-inner{
-    padding:0 8px;
-  }
-
-  .nav a{
-    padding:12px 13px;
-  }
-
-  .hero{
-    padding:0 12px;
-  }
-
-  .hero-box{
-    min-height:440px;
-    padding:30px;
-  }
-
-  .section{
-    padding:0 12px;
-    margin:40px auto;
-  }
-
-  .categories{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .shop-layout{
-    display:block;
-  }
-
-  .filters{
-    position:static;
-    margin-bottom:15px;
-  }
-
-  .product-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-  }
-
-  .product-image{
-    height:190px;
-  }
-
-  .product-info{
-    padding:12px;
-  }
-
-  .product-name{
-    font-size:12px;
-  }
-
-  .product-actions{
-    grid-template-columns:1fr;
-  }
-
-  .toolbar{
-    flex-direction:column;
-    align-items:stretch;
-  }
-
-  .toolbar-right{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-  }
-
-  .promo{
-    padding:30px 20px;
-    display:block;
-  }
-
-  .promo .btn{
-    margin-top:20px;
-  }
-
-  .footer-inner{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
+    border-radius:12px;
+    font-weight:800;
+    cursor:pointer;
 }
 
-@media(max-width:420px){
-  .product-image{
-    height:165px;
-  }
+/* RESPONSIVE */
+@media(max-width:900px){
+    .nav-links{
+        display:none;
+    }
 
-  .product-grid{
-    gap:7px;
-  }
+    .stats-grid,
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 
-  .current{
-    font-size:12px;
-  }
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
 
-  .old{
-    font-size:10px;
-  }
+    .solution-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-grid,
+    .delivery-grid,
+    .payment-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:35px 20px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:560px){
+    section{
+        padding:60px 15px;
+    }
+
+    .hero{
+        min-height:600px;
+    }
+
+    .hero-content{
+        padding:60px 18px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .stats-grid,
+    .why-grid,
+    .product-grid,
+    .process-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .product-image{
+        height:170px;
+    }
+
+    .product-info{
+        padding:13px;
+    }
+
+    .product-info h3{
+        font-size:14px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .product-actions{
+        flex-direction:column;
+    }
+
+    .about-text h2,
+    .delivery h2{
+        font-size:32px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-  🚚 FAST DELIVERY ACROSS KENYA &nbsp; | &nbsp; QUALITY PRODUCTS • GREAT PRICES
+<header>
+<nav class="navbar">
+
+<div class="logo">
+JIKO <span>KOA</span>
+<small>RENEWABLE ENERGY • CLEAN COOKING</small>
 </div>
 
-<header>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#solutions">Solutions</a>
+<a href="#products">Products</a>
+<a href="#delivery">Delivery</a>
+<a href="#contact">Contact</a>
+</div>
 
-  <div class="header-main">
+<button class="cart-button" onclick="openCart()">
+🛒 Cart <span class="cart-count" id="cartCount">0</span>
+</button>
 
-    <div class="logo">
-      ROYAL <span>SHOP</span>
-    </div>
-
-    <div class="search">
-      <input
-        id="searchInput"
-        type="search"
-        placeholder="Search products..."
-        oninput="searchProducts()"
-      >
-      <button onclick="searchProducts()">⌕</button>
-    </div>
-
-    <div class="header-actions">
-
-      <button class="icon-btn" title="Wishlist">
-        ♡
-      </button>
-
-      <button class="icon-btn" onclick="openCart()" title="Cart">
-        🛒
-        <span class="cart-count" id="cartCount">0</span>
-      </button>
-
-    </div>
-
-  </div>
-
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="#shop">All Products</a>
-      <a href="#new">New Arrivals</a>
-      <a href="#best">Best Sellers</a>
-      <a href="#sale">Sale</a>
-      <a href="#categories">Categories</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
+</nav>
 </header>
 
+<main>
+
 <!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-content">
 
-<section class="hero">
+<div class="badge">🌱 CLEAN ENERGY • SMART COOKING • KENYA</div>
 
-  <div class="hero-box">
+<h1>
+Better Cooking.<br>
+<span>Smarter Energy.</span><br>
+A Cleaner Future.
+</h1>
 
-    <div class="hero-content">
+<p>
+Jiko Koa provides modern, energy-efficient cooking solutions
+designed to help Kenyan households cook better while using
+energy more efficiently.
+</p>
 
-      <small>ROYAL SHOP COLLECTIONS</small>
+<div class="hero-buttons">
+<a href="#products" class="btn btn-primary">Explore Our Solutions</a>
+<a href="https://wa.me/" class="btn btn-outline">Order on WhatsApp</a>
+</div>
 
-      <h1>Everything You Love. One Royal Store.</h1>
-
-      <p>
-        Discover stylish fashion, shoes, electronics, home essentials,
-        beauty products and lifestyle accessories at prices made for Kenya.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#shop" class="btn btn-dark">SHOP NOW</a>
-        <a href="#categories" class="btn btn-outline">EXPLORE CATEGORIES</a>
-      </div>
-
-    </div>
-
-  </div>
-
+</div>
 </section>
 
-<!-- CATEGORIES -->
+<!-- STATS -->
+<section class="stats">
+<div class="container stats-grid">
 
-<section class="section" id="categories">
+<div class="stat">
+<strong>3,500+</strong>
+<span>Affordable entry price</span>
+</div>
 
-  <div class="section-heading">
-    <div>
-      <h2>Shop By Category</h2>
-      <p>Find what you need quickly.</p>
-    </div>
-  </div>
+<div class="stat">
+<strong>8,500</strong>
+<span>Premium stove range</span>
+</div>
 
-  <div class="categories">
+<div class="stat">
+<strong>Nairobi</strong>
+<span>Free delivery area</span>
+</div>
 
-    <div class="category" onclick="filterCategory('Fashion')">
-      <div class="emoji">👗</div>
-      <strong>Fashion</strong>
-    </div>
+<div class="stat">
+<strong>100%</strong>
+<span>Customer-focused service</span>
+</div>
 
-    <div class="category" onclick="filterCategory('Shoes')">
-      <div class="emoji">👟</div>
-      <strong>Shoes</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Electronics')">
-      <div class="emoji">📱</div>
-      <strong>Electronics</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Kitchen')">
-      <div class="emoji">🍳</div>
-      <strong>Kitchen</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Home')">
-      <div class="emoji">🏠</div>
-      <strong>Home</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Beauty')">
-      <div class="emoji">💄</div>
-      <strong>Beauty</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Bags')">
-      <div class="emoji">👜</div>
-      <strong>Bags</strong>
-    </div>
-
-    <div class="category" onclick="filterCategory('Fitness')">
-      <div class="emoji">🏋️</div>
-      <strong>Fitness</strong>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- SHOP -->
-
-<section class="section" id="shop">
-
-  <div class="section-heading">
-
-    <div>
-      <h2>Products</h2>
-      <p>Browse our Royal Shop collection.</p>
-    </div>
-
-  </div>
-
-  <div class="shop-layout">
-
-    <!-- FILTERS -->
-
-    <aside class="filters">
-
-      <h3>REFINE PRODUCTS</h3>
-
-      <div class="filter-group">
-
-        <h4>Category</h4>
-
-        <label>
-          <input type="checkbox" value="Fashion" class="categoryFilter">
-          Fashion
-        </label>
-
-        <label>
-          <input type="checkbox" value="Shoes" class="categoryFilter">
-          Shoes
-        </label>
-
-        <label>
-          <input type="checkbox" value="Electronics" class="categoryFilter">
-          Electronics
-        </label>
-
-        <label>
-          <input type="checkbox" value="Kitchen" class="categoryFilter">
-          Kitchen
-        </label>
-
-        <label>
-          <input type="checkbox" value="Home" class="categoryFilter">
-          Home
-        </label>
-
-        <label>
-          <input type="checkbox" value="Beauty" class="categoryFilter">
-          Beauty
-        </label>
-
-      </div>
-
-      <div class="filter-group">
-
-        <h4>Price</h4>
-
-        <label>
-          <input type="radio" name="price" value="under2000">
-          Under KSh 2,000
-        </label>
-
-        <label>
-          <input type="radio" name="price" value="2000to5000">
-          KSh 2,000 - 5,000
-        </label>
-
-        <label>
-          <input type="radio" name="price" value="over5000">
-          Over KSh 5,000
-        </label>
-
-        <label>
-          <input type="radio" name="price" value="all" checked>
-          Any Price
-        </label>
-
-      </div>
-
-      <button
-        class="add-btn"
-        style="width:100%;padding:12px"
-        onclick="clearFilters()"
-      >
-        CLEAR FILTERS
-      </button>
-
-    </aside>
-
-    <!-- PRODUCTS -->
-
-    <main class="shop-main">
-
-      <div class="toolbar">
-
-        <div class="toolbar-left">
-          <span id="resultCount">Showing products</span>
-        </div>
-
-        <div class="toolbar-right">
-
-          <select id="sortSelect" onchange="renderProducts()">
-            <option value="featured">Sort: Featured</option>
-            <option value="low">Price: Low to High</option>
-            <option value="high">Price: High to Low</option>
-            <option value="name">Name A-Z</option>
-          </select>
-
-          <select id="pageSize" onchange="renderProducts()">
-            <option value="12">12 Per Page</option>
-            <option value="16" selected>16 Per Page</option>
-            <option value="24">24 Per Page</option>
-          </select>
-
-        </div>
-
-      </div>
-
-      <div class="product-grid" id="productGrid"></div>
-
-    </main>
-
-  </div>
-
-</section>
-
-<!-- PROMOTION -->
-
-<section class="section">
-
-  <div class="promo">
-
-    <div>
-      <h2>Royal Deals Are Here.</h2>
-      <p>
-        Shop selected products at special prices while stocks last.
-      </p>
-    </div>
-
-    <a href="#shop" class="btn btn-dark">
-      SHOP DEALS
-    </a>
-
-  </div>
-
+</div>
 </section>
 
 <!-- ABOUT -->
+<section id="about">
+<div class="container about-grid">
 
-<section class="section" id="about">
+<div class="about-image">
+<img src="hero.jpg" alt="Jiko Koa clean cooking solution">
+</div>
 
-  <div class="section-heading">
-    <div>
-      <h2>About Royal Shop Collections</h2>
-      <p>Your online destination for everyday essentials.</p>
-    </div>
-  </div>
+<div class="about-text">
 
-  <p style="max-width:800px;line-height:1.8;color:#666;font-size:14px">
-    Royal Shop Collections brings together fashion, footwear, electronics,
-    kitchen products, home essentials, beauty products and lifestyle
-    accessories in one convenient online store.
-    We focus on attractive products, competitive prices and convenient
-    ordering for customers across Kenya.
-  </p>
+<span style="color:#08763c;font-weight:700;letter-spacing:2px;font-size:12px;">
+ABOUT JIKO KOA
+</span>
 
+<h2>
+Clean cooking solutions for a smarter Kenya.
+</h2>
+
+<p>
+Jiko Koa is a Kenyan clean-cooking and renewable-energy
+solutions brand focused on making efficient cooking technology
+more accessible to households and businesses.
+</p>
+
+<p>
+Our modern cooking stoves are designed with efficiency,
+durability and affordability in mind, helping customers get
+more value from the fuel they use.
+</p>
+
+<ul class="check-list">
+<li>Energy-efficient cooking</li>
+<li>Strong and durable construction</li>
+<li>Affordable solutions</li>
+<li>Delivery within Nairobi and beyond</li>
+<li>Customer-focused support</li>
+</ul>
+
+</div>
+</div>
 </section>
 
+<!-- SOLUTIONS -->
+<section class="solutions" id="solutions">
+
+<div class="section-heading">
+<span>Our Solutions</span>
+<h2>Smart energy for everyday cooking</h2>
+<p>
+Practical clean-cooking solutions designed for homes,
+businesses and institutions.
+</p>
+</div>
+
+<div class="container solution-grid">
+
+<div class="solution-card">
+<div class="solution-icon">🔥</div>
+<h3>Efficient Cooking</h3>
+<p>
+Designed to make better use of cooking fuel and provide
+efficient heat distribution.
+</p>
+</div>
+
+<div class="solution-card">
+<div class="solution-icon">🌱</div>
+<h3>Clean Cooking</h3>
+<p>
+Supporting the transition toward more efficient and
+sustainable cooking practices.
+</p>
+</div>
+
+<div class="solution-card">
+<div class="solution-icon">🏠</div>
+<h3>Household Solutions</h3>
+<p>
+Affordable modern cooking options suitable for everyday
+Kenyan households.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+
+<div class="section-heading">
+<span>Shop Jiko Koa</span>
+<h2>Our Cooking Solutions</h2>
+<p>
+Choose a Jiko Koa stove that matches your cooking needs.
+Add products to your cart or order directly through WhatsApp.
+</p>
+</div>
+
+<div class="container product-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko1.jpg" alt="Jiko Koa Stove 1">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Classic</h3>
+<p class="product-description">Efficient everyday charcoal cooking stove.</p>
+<div class="price">KSh 3,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Classic',3500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Classic',3500)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko2.jpg" alt="Jiko Koa Stove 2">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Standard</h3>
+<p class="product-description">Practical and durable clean-cooking solution.</p>
+<div class="price">KSh 4,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Standard',4500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Standard',4500)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko3.jpg" alt="Jiko Koa Stove 3">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Premium</h3>
+<p class="product-description">Premium stove for efficient home cooking.</p>
+<div class="price">KSh 5,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Premium',5500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Premium',5500)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko4.jpg" alt="Jiko Koa Stove 4">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Pro</h3>
+<p class="product-description">Built for customers who need more cooking capacity.</p>
+<div class="price">KSh 6,000</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Pro',6000)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Pro',6000)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko5.jpg" alt="Jiko Koa Stove 5">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Family</h3>
+<p class="product-description">A larger solution for family cooking.</p>
+<div class="price">KSh 6,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Family',6500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Family',6500)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko6.jpg" alt="Jiko Koa Stove 6">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Deluxe</h3>
+<p class="product-description">Enhanced cooking solution for demanding users.</p>
+<div class="price">KSh 7,000</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Deluxe',7000)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Deluxe',7000)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko7.jpg" alt="Jiko Koa Stove 7">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Enterprise</h3>
+<p class="product-description">High-capacity solution for heavier cooking needs.</p>
+<div class="price">KSh 7,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Enterprise',7500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Enterprise',7500)">Order</button>
+</div>
+</div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="product-card">
+<div class="product-image">
+<img src="jiko8.jpg" alt="Jiko Koa Stove 8">
+</div>
+<div class="product-info">
+<h3>Jiko Koa Premium Plus</h3>
+<p class="product-description">Our premium option for demanding customers.</p>
+<div class="price">KSh 8,500</div>
+<div class="product-actions">
+<button class="add-cart" onclick="addToCart('Jiko Koa Premium Plus',8500)">Add to Cart</button>
+<button class="order-now" onclick="orderProduct('Jiko Koa Premium Plus',8500)">Order</button>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- WHY JIKO KOA -->
+<section>
+<div class="section-heading">
+<span>Why Jiko Koa</span>
+<h2>Built around your needs</h2>
+<p>
+We combine practical energy efficiency with affordability,
+durability and convenient service.
+</p>
+</div>
+
+<div class="container why-grid">
+
+<div class="why-card">
+<div class="icon">⚡</div>
+<h3>Energy Efficient</h3>
+<p>Designed for efficient cooking and better fuel use.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">🛠️</div>
+<h3>Durable</h3>
+<p>Made for everyday cooking and long-term use.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">💰</div>
+<h3>Affordable</h3>
+<p>Solutions available from KSh 3,500.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">🚚</div>
+<h3>Reliable Delivery</h3>
+<p>Convenient delivery within Nairobi and beyond.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+
+<div class="section-heading">
+<span style="color:#d8a83e;">How To Order</span>
+<h2>Simple. Fast. Convenient.</h2>
+<p>
+Get your Jiko Koa solution in four easy steps.
+</p>
+</div>
+
+<div class="container process-grid">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Choose</h3>
+<p>Select your preferred product.</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Order</h3>
+<p>Contact us through WhatsApp.</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Pay</h3>
+<p>Pay through M-Pesa or Airtel Money.</p>
+</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<h3>Receive</h3>
+<p>We arrange delivery to your location.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PAYMENT -->
+<section class="payment">
+
+<div class="section-heading">
+<span>Easy Payments</span>
+<h2>Pay securely and conveniently</h2>
+<p>
+We support convenient mobile-money payment options.
+</p>
+</div>
+
+<div class="container payment-grid">
+
+<div class="payment-card">
+<h3>📱 M-Pesa</h3>
+<p>
+Pay for your Jiko Koa order using <strong>M-Pesa</strong>.
+</p>
+<p class="payment-note">
+Contact us on WhatsApp before payment so we can confirm
+your product, delivery location and the correct payment details.
+</p>
+</div>
+
+<div class="payment-card">
+<h3>📲 Airtel Money</h3>
+<p>
+We also support <strong>Airtel Money</strong> for customers
+who prefer Airtel's mobile payment service.
+</p>
+<p class="payment-note">
+Please contact Jiko Koa to confirm the payment details
+before completing your transaction.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery" id="delivery">
+
+<div class="container delivery-grid">
+
+<div>
+<h2>
+We deliver your Jiko Koa to you.
+</h2>
+
+<p>
+Enjoy free delivery within Nairobi. We can also arrange
+delivery outside Nairobi depending on your location.
+</p>
+
+<a href="https://wa.me/" class="btn btn-primary" style="margin-top:25px;">
+Check Delivery
+</a>
+</div>
+
+<div class="delivery-box">
+<h3>🚚 Delivery Information</h3>
+
+<p>
+<strong>Within Nairobi:</strong><br>
+Free delivery.
+</p>
+
+<br>
+
+<p>
+<strong>Outside Nairobi:</strong><br>
+Delivery starts from KSh 300 and may vary depending
+on your location.
+</p>
+
+<br>
+
+<p>
+Contact us before ordering to confirm the exact delivery
+charge and estimated delivery time.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+
+<div class="section-heading">
+<span>FAQ</span>
+<h2>Frequently Asked Questions</h2>
+</div>
+
+<div class="faq-list">
+
+<details>
+<summary>What products does Jiko Koa sell?</summary>
+<p>
+Jiko Koa specializes in modern, energy-efficient charcoal
+cooking stoves and clean-cooking solutions.
+</p>
+</details>
+
+<details>
+<summary>How much do Jiko Koa stoves cost?</summary>
+<p>
+Our listed products range from KSh 3,500 to KSh 8,500.
+</p>
+</details>
+
+<details>
+<summary>Do you deliver?</summary>
+<p>
+Yes. Delivery is free within Nairobi. Delivery outside Nairobi
+starts from KSh 300 depending on the destination.
+</p>
+</details>
+
+<details>
+<summary>How can I order?</summary>
+<p>
+Choose a product and use the Order button or contact Jiko Koa
+through WhatsApp.
+</p>
+</details>
+
+<details>
+<summary>Which payment methods are available?</summary>
+<p>
+We support M-Pesa and Airtel Money. Contact us to confirm
+payment details before sending money.
+</p>
+</details>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<div class="section-heading">
+<span>Contact Jiko Koa</span>
+<h2>Let's power better cooking together.</h2>
+<p>
+Have a question, need a quotation or want to place an order?
+Contact our team.
+</p>
+</div>
+
+<div class="container contact-grid">
+
+<div class="contact-card">
+
+<h3 style="color:#063d25;">Get In Touch</h3>
+
+<div class="contact-item">
+<strong>📍 Location</strong>
+Nairobi, Kenya
+</div>
+
+<div class="contact-item">
+<strong>📱 WhatsApp</strong>
+<a href="https://wa.me/">Chat with Jiko Koa</a>
+</div>
+
+<div class="contact-item">
+<strong>🚚 Delivery</strong>
+Nairobi and selected locations across Kenya
+</div>
+
+<div class="contact-item">
+<strong>🕐 Business Hours</strong>
+Monday – Saturday
+</div>
+
+<a href="https://wa.me/" class="whatsapp-large">
+💬 Order via WhatsApp
+</a>
+
+</div>
+
+<div class="contact-card">
+
+<h3 style="color:#063d25;">Jiko Koa Mission</h3>
+
+<p style="margin-top:15px;color:#65736a;">
+Our mission is to make efficient and practical clean-cooking
+solutions accessible to more Kenyan households while
+supporting a more sustainable energy future.
+</p>
+
+<p style="margin-top:18px;color:#65736a;">
+Whether you are buying for your home, business or institution,
+Jiko Koa is ready to help you find a solution that fits your
+cooking needs.
+</p>
+
+<div style="margin-top:25px;padding:20px;background:#edf6ed;border-radius:15px;">
+<strong style="color:#08763c;">
+🌱 JIKO KOA
+</strong>
+<p style="font-size:13px;margin-top:5px;">
+Renewable Energy & Clean Cooking Solutions
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+</main>
+
 <!-- FOOTER -->
+<footer>
 
-<footer id="contact">
+<div class="footer-grid">
 
-  <div class="footer-inner">
+<div>
+<h3>JIKO KOA</h3>
+<p>
+Renewable Energy & Clean Cooking Solutions.
+Providing practical, efficient and affordable cooking
+solutions for Kenya.
+</p>
+</div>
 
-    <div class="footer-brand">
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#solutions">Solutions</a>
+<a href="#products">Products</a>
+<a href="#delivery">Delivery</a>
+</div>
+</div>
 
-      <h2>ROYAL <span>SHOP</span></h2>
+<div>
+<h3>Contact</h3>
+<div class="footer-links">
+<a href="https://wa.me/">WhatsApp</a>
+<a href="#contact">Contact Us</a>
+<a href="#products">Shop Now</a>
+</div>
+</div>
 
-      <p>
-        Fashion • Electronics • Home • Kitchen • Beauty • Lifestyle
-      </p>
+</div>
 
-      <p style="margin-top:15px">
-        Your trusted online shopping destination in Kenya.
-      </p>
-
-    </div>
-
-    <div>
-
-      <h3>SHOP</h3>
-
-      <a href="#shop">All Products</a>
-      <a href="#new">New Arrivals</a>
-      <a href="#best">Best Sellers</a>
-      <a href="#sale">Sale</a>
-
-    </div>
-
-    <div>
-
-      <h3>HELP</h3>
-
-      <a href="#contact">Contact Us</a>
-      <a href="#">Delivery Information</a>
-      <a href="#">Payment Information</a>
-      <a href="#">Returns</a>
-
-    </div>
-
-    <div>
-
-      <h3>CONTACT</h3>
-
-      <p>📞 +254 700 000 000</p>
-      <p>💬 WhatsApp Ordering</p>
-      <p>📍 Kenya</p>
-      <p>🕘 Mon - Sat: 8AM - 7PM</p>
-
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    © 2026 Royal Shop Collections. All Rights Reserved.
-  </div>
+<div class="copyright">
+© 2026 Jiko Koa. All Rights Reserved. | Renewable Energy & Clean Cooking Solutions
+</div>
 
 </footer>
 
-<!-- WHATSAPP -->
-
-<a
-  class="whatsapp"
-  href="https://wa.me/254700000000?text=Hello%20Royal%20Shop%20Collections,%20I%20would%20like%20to%20make%20an%20order."
-  target="_blank"
->
-  ☎
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/" class="whatsapp-float" aria-label="WhatsApp">
+💬
 </a>
 
-<!-- CART OVERLAY -->
-
-<div
-  class="cart-overlay"
-  id="cartOverlay"
-  onclick="closeCart()"
-></div>
-
 <!-- CART -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCartOutside(event)">
 
-<div class="cart" id="cart">
+<div class="cart" onclick="event.stopPropagation()">
 
-  <div class="cart-header">
+<div class="cart-header">
+<h2>Your Cart</h2>
+<button class="close-cart" onclick="closeCart()">×</button>
+</div>
 
-    <h2>Your Cart</h2>
+<div id="cartItems">
+<p style="color:#777;">Your cart is empty.</p>
+</div>
 
-    <button class="close-cart" onclick="closeCart()">×</button>
+<div class="cart-total">
+<p>Total</p>
+<strong id="cartTotal">KSh 0</strong>
+<button class="checkout" onclick="checkoutWhatsApp()">
+Order Cart via WhatsApp
+</button>
+</div>
 
-  </div>
-
-  <div class="cart-items" id="cartItems"></div>
-
-  <div class="cart-footer">
-
-    <div class="cart-total">
-
-      <span>Total</span>
-      <span id="cartTotal">KSh 0</span>
-
-    </div>
-
-    <button class="checkout" onclick="checkoutWhatsApp()">
-      ORDER VIA WHATSAPP
-    </button>
-
-  </div>
-
+</div>
 </div>
 
 <script>
 
-/* ==========================================
-   ROYAL SHOP PRODUCTS
-========================================== */
+let cart = [];
 
-const products = [
+function addToCart(name,price){
 
-{
- id:1,
- name:"Royal Classic Women's Mule Sandals",
- category:"Shoes",
- price:1250,
- oldPrice:1500,
- badge:"SALE",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:2,
- name:"Premium Casual Sneakers",
- category:"Shoes",
- price:2500,
- oldPrice:3200,
- badge:"POPULAR",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:3,
- name:"Classic Leather Backpack",
- category:"Bags",
- price:1800,
- oldPrice:2200,
- badge:"NEW",
- rating:4.6,
- image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:4,
- name:"Royal Smart Watch Series 8",
- category:"Electronics",
- price:2000,
- oldPrice:2800,
- badge:"SALE",
- rating:4.5,
- image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:5,
- name:"Wireless Bluetooth Earbuds",
- category:"Electronics",
- price:1600,
- oldPrice:2100,
- badge:"BEST SELLER",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:6,
- name:"Modern Women's Handbag",
- category:"Bags",
- price:2200,
- oldPrice:3000,
- badge:"NEW",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:7,
- name:"Luxury Cotton Bath Towel",
- category:"Home",
- price:850,
- oldPrice:1200,
- badge:"DEAL",
- rating:4.6,
- image:"https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:8,
- name:"Modern Kitchen Cookware Set",
- category:"Kitchen",
- price:7500,
- oldPrice:9000,
- badge:"POPULAR",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:9,
- name:"Digital Kitchen Air Fryer",
- category:"Kitchen",
- price:5500,
- oldPrice:6500,
- badge:"NEW",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:10,
- name:"Professional Hair Shaver",
- category:"Beauty",
- price:2000,
- oldPrice:2500,
- badge:"DEAL",
- rating:4.5,
- image:"https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:11,
- name:"Women's Casual Fashion Dress",
- category:"Fashion",
- price:1800,
- oldPrice:2400,
- badge:"NEW",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:12,
- name:"Premium Men's Casual Shirt",
- category:"Fashion",
- price:1500,
- oldPrice:2000,
- badge:"BEST SELLER",
- rating:4.6,
- image:"https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:13,
- name:"Luxury Modern Area Carpet",
- category:"Home",
- price:5500,
- oldPrice:7000,
- badge:"POPULAR",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:14,
- name:"Adjustable Fitness Stepper",
- category:"Fitness",
- price:6500,
- oldPrice:8000,
- badge:"NEW",
- rating:4.5,
- image:"https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:15,
- name:"Premium Walking Exercise Machine",
- category:"Fitness",
- price:20200,
- oldPrice:24000,
- badge:"PREMIUM",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:16,
- name:"Modern Women's Handbag Set",
- category:"Bags",
- price:2500,
- oldPrice:3500,
- badge:"SALE",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:17,
- name:"Royal Premium Headphones",
- category:"Electronics",
- price:2000,
- oldPrice:2800,
- badge:"BEST SELLER",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:18,
- name:"Elegant Women's Fashion Top",
- category:"Fashion",
- price:1200,
- oldPrice:1700,
- badge:"NEW",
- rating:4.5,
- image:"https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:19,
- name:"Non-Stick Cooking Pot",
- category:"Kitchen",
- price:1800,
- oldPrice:2300,
- badge:"DEAL",
- rating:4.6,
- image:"https://images.unsplash.com/photo-1584990347449-a0e8f9f5b7b7?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:20,
- name:"Modern Home Storage Rack",
- category:"Home",
- price:1500,
- oldPrice:1900,
- badge:"POPULAR",
- rating:4.6,
- image:"https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:21,
- name:"Royal Beauty Hair Styling Kit",
- category:"Beauty",
- price:2500,
- oldPrice:3200,
- badge:"NEW",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:22,
- name:"Premium Running Sneakers",
- category:"Shoes",
- price:3000,
- oldPrice:4000,
- badge:"BEST SELLER",
- rating:4.8,
- image:"https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:23,
- name:"Modern Quartz Wall Clock",
- category:"Home",
- price:1000,
- oldPrice:1400,
- badge:"DEAL",
- rating:4.5,
- image:"https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?auto=format&fit=crop&w=800&q=80"
-},
-
-{
- id:24,
- name:"Travel Backpack Premium",
- category:"Bags",
- price:2000,
- oldPrice:2600,
- badge:"NEW",
- rating:4.7,
- image:"https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80"
-}
-
-];
-
-/* ==========================================
-   CART
-========================================== */
-
-let cart = JSON.parse(localStorage.getItem("royalCart") || "[]");
-
-function saveCart(){
-  localStorage.setItem("royalCart",JSON.stringify(cart));
-}
-
-function addToCart(id){
-
-  const product = products.find(p => p.id === id);
-
-  const existing = cart.find(item => item.id === id);
-
-  if(existing){
-    existing.qty++;
-  }else{
     cart.push({
-      ...product,
-      qty:1
+        name:name,
+        price:price
     });
-  }
 
-  saveCart();
-  updateCart();
+    updateCart();
 
-  openCart();
-}
-
-function removeFromCart(id){
-
-  cart = cart.filter(item => item.id !== id);
-
-  saveCart();
-  updateCart();
-
+    document.getElementById("cartOverlay").classList.add("active");
 }
 
 function updateCart(){
 
-  document.getElementById("cartCount").textContent =
-    cart.reduce((sum,item)=>sum + item.qty,0);
+    const items = document.getElementById("cartItems");
+    const count = document.getElementById("cartCount");
+    const total = document.getElementById("cartTotal");
 
-  const container = document.getElementById("cartItems");
+    count.textContent = cart.length;
 
-  if(cart.length === 0){
+    if(cart.length === 0){
 
-    container.innerHTML = `
-      <div style="text-align:center;padding:50px 20px;color:#777">
-        <div style="font-size:45px">🛒</div>
-        <p>Your cart is empty.</p>
-      </div>
-    `;
+        items.innerHTML =
+        '<p style="color:#777;">Your cart is empty.</p>';
 
-  }else{
+        total.textContent = "KSh 0";
+        return;
+    }
 
-    container.innerHTML = cart.map(item => `
+    let html = "";
+    let sum = 0;
 
-      <div class="cart-item">
+    cart.forEach((item,index)=>{
 
-        <img src="${item.image}" alt="${item.name}">
+        sum += item.price;
 
-        <div>
-          <h4>${item.name}</h4>
-          <p>KSh ${item.price.toLocaleString()} × ${item.qty}</p>
+        html += `
+        <div class="cart-item">
+            <div>
+                <h4>${item.name}</h4>
+                <small>KSh ${item.price.toLocaleString()}</small>
+            </div>
+
+            <button class="remove-item"
+            onclick="removeItem(${index})">
+            Remove
+            </button>
         </div>
+        `;
+    });
 
-        <button
-          class="remove"
-          onclick="removeFromCart(${item.id})"
-        >
-          ×
-        </button>
+    items.innerHTML = html;
+    total.textContent = "KSh " + sum.toLocaleString();
+}
 
-      </div>
+function removeItem(index){
 
-    `).join("");
-
-  }
-
-  const total = cart.reduce(
-    (sum,item)=>sum + item.price * item.qty,
-    0
-  );
-
-  document.getElementById("cartTotal").textContent =
-    "KSh " + total.toLocaleString();
-
+    cart.splice(index,1);
+    updateCart();
 }
 
 function openCart(){
 
-  document.getElementById("cart").classList.add("active");
-
-  document.getElementById("cartOverlay").classList.add("active");
-
+    document.getElementById("cartOverlay")
+    .classList.add("active");
 }
 
 function closeCart(){
 
-  document.getElementById("cart").classList.remove("active");
-
-  document.getElementById("cartOverlay").classList.remove("active");
-
+    document.getElementById("cartOverlay")
+    .classList.remove("active");
 }
 
-/* ==========================================
-   WHATSAPP CHECKOUT
-========================================== */
+function closeCartOutside(event){
+
+    if(event.target.id === "cartOverlay"){
+        closeCart();
+    }
+}
+
+function orderProduct(name,price){
+
+    const message =
+    "Hello Jiko Koa,%0A%0A" +
+    "I would like to order:%0A" +
+    name + "%0A" +
+    "Price: KSh " + price.toLocaleString() +
+    "%0A%0APlease confirm availability and delivery.";
+
+    window.open(
+        "https://wa.me/?text=" + message,
+        "_blank"
+    );
+}
 
 function checkoutWhatsApp(){
 
-  if(cart.length === 0){
+    if(cart.length === 0){
 
-    alert("Your cart is empty.");
+        alert("Your cart is empty.");
+        return;
+    }
 
-    return;
+    let message =
+    "Hello Jiko Koa,%0A%0AI would like to place an order:%0A%0A";
 
-  }
+    let total = 0;
 
-  let message =
-    "Hello Royal Shop Collections,%0A%0A" +
-    "I would like to order:%0A";
+    cart.forEach((item,index)=>{
 
-  cart.forEach(item => {
+        message +=
+        (index+1) + ". " +
+        item.name +
+        " - KSh " +
+        item.price.toLocaleString() +
+        "%0A";
+
+        total += item.price;
+    });
 
     message +=
-      "- " +
-      item.name +
-      " x" +
-      item.qty +
-      " — KSh " +
-      (item.price * item.qty).toLocaleString() +
-      "%0A";
-
-  });
-
-  const total = cart.reduce(
-    (sum,item)=>sum + item.price * item.qty,
-    0
-  );
-
-  message +=
     "%0ATotal: KSh " +
     total.toLocaleString() +
-    "%0A%0A" +
-    "Please confirm availability and delivery.";
+    "%0A%0APlease confirm delivery and payment details.";
 
-  window.open(
-    "https://wa.me/254700000000?text=" + message,
-    "_blank"
-  );
-
-}
-
-/* ==========================================
-   PRODUCT DISPLAY
-========================================== */
-
-let currentProducts = [...products];
-
-function renderProducts(){
-
-  let list = [...currentProducts];
-
-  const sort =
-    document.getElementById("sortSelect").value;
-
-  if(sort === "low"){
-    list.sort((a,b)=>a.price-b.price);
-  }
-
-  if(sort === "high"){
-    list.sort((a,b)=>b.price-a.price);
-  }
-
-  if(sort === "name"){
-    list.sort((a,b)=>a.name.localeCompare(b.name));
-  }
-
-  const size =
-    Number(document.getElementById("pageSize").value);
-
-  list = list.slice(0,size);
-
-  document.getElementById("resultCount").textContent =
-    "Showing " + list.length + " products";
-
-  document.getElementById("productGrid").innerHTML =
-    list.map(product => productCard(product)).join("");
-
-}
-
-function productCard(product){
-
-  return `
-
-  <article class="product">
-
-    <div class="product-image">
-
-      <span class="badge ${product.badge === "SALE" ? "sale":""}">
-        ${product.badge}
-      </span>
-
-      <button
-        class="wishlist"
-        onclick="this.textContent=this.textContent==='♡'?'♥':'♡'"
-      >
-        ♡
-      </button>
-
-      <img
-        src="${product.image}"
-        alt="${product.name}"
-        loading="lazy"
-      >
-
-    </div>
-
-    <div class="product-info">
-
-      <div class="product-category">
-        ${product.category}
-      </div>
-
-      <div class="product-name">
-        ${product.name}
-      </div>
-
-      <div class="rating">
-        <span>★★★★★</span>
-        ${product.rating}
-      </div>
-
-      <div class="price">
-
-        <span class="current">
-          KSh ${product.price.toLocaleString()}
-        </span>
-
-        ${
-          product.oldPrice
-          ?
-          `<span class="old">
-            KSh ${product.oldPrice.toLocaleString()}
-          </span>`
-          :
-          ""
-        }
-
-      </div>
-
-      <div class="product-actions">
-
-        <button
-          class="buy-btn"
-          onclick="buyNow(${product.id})"
-        >
-          BUY NOW
-        </button>
-
-        <button
-          class="add-btn"
-          onclick="addToCart(${product.id})"
-        >
-          ADD TO CART
-        </button>
-
-      </div>
-
-    </div>
-
-  </article>
-
-  `;
-
-}
-
-/* ==========================================
-   BUY NOW
-========================================== */
-
-function buyNow(id){
-
-  const product = products.find(p=>p.id===id);
-
-  const message =
-    "Hello Royal Shop Collections,%0A%0A" +
-    "I want to buy:%0A" +
-    product.name +
-    "%0APrice: KSh " +
-    product.price.toLocaleString();
-
-  window.open(
-    "https://wa.me/254700000000?text=" + message,
-    "_blank"
-  );
-
-}
-
-/* ==========================================
-   SEARCH
-========================================== */
-
-function searchProducts(){
-
-  const term =
-    document
-      .getElementById("searchInput")
-      .value
-      .toLowerCase()
-      .trim();
-
-  currentProducts = products.filter(product =>
-    product.name.toLowerCase().includes(term) ||
-    product.category.toLowerCase().includes(term)
-  );
-
-  renderProducts();
-
-}
-
-/* ==========================================
-   CATEGORY
-========================================== */
-
-function filterCategory(category){
-
-  currentProducts =
-    products.filter(
-      product => product.category === category
+    window.open(
+        "https://wa.me/?text=" + message,
+        "_blank"
     );
-
-  document.getElementById("shop")
-    .scrollIntoView({behavior:"smooth"});
-
-  renderProducts();
-
 }
-
-/* ==========================================
-   FILTERS
-========================================== */
-
-document
-  .querySelectorAll(".categoryFilter")
-  .forEach(box => {
-
-    box.addEventListener("change", applyFilters);
-
-  });
-
-document
-  .querySelectorAll('input[name="price"]')
-  .forEach(radio => {
-
-    radio.addEventListener("change", applyFilters);
-
-  });
-
-function applyFilters(){
-
-  const categories =
-    [...document.querySelectorAll(".categoryFilter:checked")]
-      .map(input=>input.value);
-
-  const price =
-    document.querySelector(
-      'input[name="price"]:checked'
-    ).value;
-
-  currentProducts = products.filter(product => {
-
-    const categoryMatch =
-      categories.length === 0 ||
-      categories.includes(product.category);
-
-    let priceMatch = true;
-
-    if(price === "under2000"){
-      priceMatch = product.price < 2000;
-    }
-
-    if(price === "2000to5000"){
-      priceMatch =
-        product.price >= 2000 &&
-        product.price <= 5000;
-    }
-
-    if(price === "over5000"){
-      priceMatch = product.price > 5000;
-    }
-
-    return categoryMatch && priceMatch;
-
-  });
-
-  renderProducts();
-
-}
-
-function clearFilters(){
-
-  document
-    .querySelectorAll(".categoryFilter")
-    .forEach(box=>box.checked=false);
-
-  document
-    .querySelector(
-      'input[name="price"][value="all"]'
-    ).checked=true;
-
-  document.getElementById("searchInput").value="";
-
-  currentProducts=[...products];
-
-  renderProducts();
-
-}
-
-/* ==========================================
-   INITIALIZE
-========================================== */
-
-updateCart();
-
-renderProducts();
 
 </script>
 
